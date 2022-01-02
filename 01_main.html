@@ -1,487 +1,512 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>THE ART</title>
-
-<link href="https://unpkg.com/swiper/swiper-bundle.css" type="text/css" rel="stylesheet">
-<link href="contents/css/reset.css" type="text/css" rel="stylesheet">
-<link href="contents/css/layout.css" type="text/css" rel="stylesheet">
-<link href="contents/css/main.css" type="text/css" rel="stylesheet">
-<link href="contents/css/sub.css" type="text/css" rel="stylesheet">
-
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-<script src="contents/js/design.js" type="text/javascript"></script>
-
-</head>
-
-
-<body>
-	
-	<div class="wrap main">
-
-		<!-- header -->
-		<header class="header">
-			<div class="cont_center">
-				<h1 class="logo"><a href="#"><img src="contents/images/header/logo.png" alt="THE ART"></a></h1>
-
-				<button type="button" class="btn_gnb"><span>메뉴 열기</span></button>
-				
-				<!-- gnb -->
-				<div class="gnb_area">
-					<p class="gnb_bg"></p>
-
-					<div class="gnb_layout">
-						<ul class="join_link_list">
-							<li><a href="#">Exibition</a></li>
-							<li><a href="#">Artist</a></li>
-						</ul>
-
-						<ul class="gnb_list">
-							<li><a href="#">About THE ART</a></li>
-							<li><a href="#">공간 시뮬레이션</a></li>
-							<li><a href="#">작가 신청하기</a></li>
-							<li><a href="#">문의하기</a></li>
-						</ul>
-
-						<!-- 로그인 안했을 경우 -->
-						<div class="btn_login_area" style="display:none;">
-							<a href="#" class="btn_action">로그인</a>
-						</div>
-						<!-- //로그인 안했을 경우 -->
-
-						<!-- 로그인 했을 경우 -->
-						<div class="btn_login_area">
-							<a href="#" class="user_link">갤러리스트 <strong>이정훈</strong> 님</a>
-						</div>
-						<!-- //로그인 했을 경우 -->
-					</div>
-				</div>
-				<!-- //gnb -->
-
-				<a href="#" class="btn_mypage">마이페이지</a>
-
-				<a href="#" class="btn_search">검색</a>
-			</div>
-		</header>
-		<!-- //header -->
-
-		<!-- container -->
-		<div class="container">
-			<!-- 상단 슬라이드 -->
-			<div class="swiper main_slide">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="contents/images/main/main_visual1.jpg" alt="">
-
-						<div class="main_slide_text">
-							미술품 무료 전시 신청 서비스 <br>
-							디아트 갤러리
-						</div>
-					</div>
-
-					<div class="swiper-slide">
-						<img src="contents/images/main/main_visual2.jpg" alt="">
-
-						<div class="main_slide_text">
-							당신이 있는곳이 갤러리 입니다.
-						</div>
-					</div>
-					
-					<div class="swiper-slide">
-						<img src="contents/images/main/main_visual3.jpg" alt="">
-
-						<div class="main_slide_text">
-							디아트의 갤러리스트가 되어 <br>
-							당신의 공간에 아름다운 변화를 만들어 보세요.
-						</div>
-					</div>
-				</div>
-
-				<div class="slide_paging"></div>
-			</div>
-			<!-- //상단 슬라이드 -->
-
-			<div class="cont_center">
-				<!-- THE ART Best Piece -->
-				<div class="best_piece_area">
-					<h2 class="title_main"><span>THE ART </span>Best Piece</h2>
-
-					<div class="art_text">
-						예술은 손으로 만든 작품이 아니라 <br>예술가가 경험한 감정의 전달이다.
-
-						<p class="art_said">-  레프 톨스토이, Leo Tolstoy  -</p>
-					</div>
-
-					<ul class="art_list">
-						<li>
-							<a href="#">
-								<div class="art_img">
-									<img src="contents/images/main/best_img1.jpg" alt="">
-								</div>
-
-								<div class="artist_info">
-									<span class="artist_name">김지희</span>
-
-									<strong>정물32</strong>
-								</div>
-
-								<p class="art_info">
-									종이에 파스텔, 90x67(cm)
-								</p>
-
-								<p class="art_display no">전시불가</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="art_img">
-									<img src="contents/images/main/best_img2.jpg" alt="">
-								</div>
-
-								<div class="artist_info">
-									<span class="artist_name">김은송</span>
-
-									<strong>봄길</strong>
-								</div>
-
-								<p class="art_info">
-									캔버스에 유채, 100x100(cm)
-								</p>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="art_img">
-									<img src="contents/images/main/best_img3.jpg" alt="">
-								</div>
-
-								<div class="artist_info">
-									<span class="artist_name">고원태</span>
-
-									<strong>WHITE DEER Gold rain</strong>
-								</div>
-
-								<p class="art_info">
-									캔버스에 아크릴채색, 91x117(cm)
-								</p>
-
-								<p class="art_display">
-									<span>전시중</span> / <span>2021. 10. 01 ~ 2022. 01. 01</span>
-								</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- //THE ART Best Piece -->
-
-				<!-- THE ART Exibition -->
-				<div class="exibition">
-					<h2 class="title_main">THE ART Exibition</h2>
-
-					<div class="exibition_list_area">
-						<!-- list -->
-						<div class="exibition_list">
-							<div class="grid_sizer"></div>
-							<div class="gutter_sizer"></div>
-
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img1.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">서현주</span>
-
-										<strong>The door 1</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 유채, 90x67(cm)
-									</p>
-								</a>
-							</div>
-							
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img2.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">이향연</span>
-
-										<strong>City-9</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 혼합재료, 97x130(cm)
-									</p>
-
-									<p class="art_display">
-										<span>전시중</span> / <span>2021. 10. 01 ~ 2022. 01. 01</span>
-									</p>
-								</a>
-							</div>
-
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img3.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">전미선</span>
-
-										<strong>CastorPollux</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 혼합재료, 97x130(cm)
-									</p>
-
-									<p class="art_display">
-										<span>전시중</span> / <span>2021. 10. 01 ~ 2022. 01. 01</span>
-									</p>
-								</a>
-							</div>
-
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img4.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">고진이</span>
-
-										<strong>Echo</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 유채, 118x118(cm)
-									</p>
-
-									<p class="art_display">
-										<span>전시중</span> / <span>2021. 10. 01 ~ 2022. 01. 01</span>
-									</p>
-								</a>
-							</div>
-							
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img5.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">윤영</span>
-
-										<strong>Self-Ficiton III-1</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 아크릴, 90x67(cm)
-									</p>
-								</a>
-							</div>
-
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img6.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">남여주</span>
-
-										<strong>Reflective 15004</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 아크릴채색, 레진, 비즈, 80x117(cm)
-									</p>
-
-									<p class="art_display no">
-										<span>전시불가</span>
-									</p>
-								</a>
-							</div>
-
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img7.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">정예솜</span>
-
-										<strong>ingredient</strong>
-									</div>
-
-									<p class="art_info">
-										캔버스에 아크릴, 72x72(cm)
-									</p>
-								</a>
-							</div>
-							
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img8.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">강호연</span>
-
-										<strong>Coexistence no.1</strong>
-									</div>
-
-									<p class="art_info">
-										실크스크린에 오일스틱, 65x96(cm)
-									</p>
-
-									<p class="art_display no">
-										<span>전시불가</span>
-									</p>
-								</a>
-							</div>
-
-							<div class="grid_exibition">
-								<a href="#">
-									<div class="art_img">
-										<img src="contents/images/main/exibition_img9.jpg" alt="">
-									</div>
-
-									<div class="artist_info">
-										<span class="artist_name">임희성</span>
-
-										<strong>Tree 2</strong>
-									</div>
-
-									<p class="art_info">
-										아크릴패널에 아크릴채색, 120x80(cm)
-									</p>
-								</a>
-							</div>
-						</div>
-						<!-- //list -->
-
-						<div class="btn_more_art">
-							<a href="#" class="btn_action">작품 더 보기</a>
-						</div>
-					</div>
-				</div>	
-				<!-- //THE ART Exibition -->
-
-				<div class="join_theart_area">
-					<!-- The Gallerist -->
-					<div class="join_theart_box">
-						<h2 class="title_main">The Gallerist</h2>
-
-						<p class="descript_join_theart">
-							디아트의 갤러리스트가 되어 <br>당신의 공간에 아름다운 변화를 만들어보세요.
-						</p>
-
-						<div class="btn_join_theart">
-							<a href="#" class="btn_action">갤러리스트 가입하기</a>
-						</div>
-					</div>
-					<!-- //The Gallerist -->
-
-					<!-- The Artist -->
-					<div class="join_theart_box">
-						<h2 class="title_main">The Artist</h2>
-
-						<p class="descript_join_theart">
-							세상의 모든 공간의 예술화를 꿈꾸는 디아트 갤러리와 <br>함께 하실 창의적인 신진작가를 모십니다.
-						</p>
-
-						<div class="btn_join_theart">
-							<a href="#" class="btn_action">디아트 작가 지원하기</a>
-						</div>
-					</div>
-					<!-- //The Artist -->
-				</div>
-			</div>
-
-		</div>
-		<!-- //container -->
-
-		<!-- footer -->
-		<footer class="footer">
-			<div class="cont_center">
-				<ul class="f_menu">
-					<li class="m_none"><a href="#">About The Art</a></li>
-					<li class="m_none"><a href="#">작가 지원하기</a></li>
-					<li class="m_none"><a href="#">문의하기</a></li>
-					<li><a href="#">이용약관</a></li>
-					<li><a href="#">개인정보처리방침</a></li>
-				</ul>
-
-				<ul class="f_sns_list">
-					<li><a href="#" class="insta">인스타그램</a></li>
-					<li><a href="#" class="youtube">유투브</a></li>
-					<li><a href="#" class="kakao">카카오톡</a></li>
-				</ul>
-
-				<p class="f_logo"><img src="contents/images/footer/f_logo.png" alt="THE ART"></p>
-
-				<div class="f_info_area">
-					주식회사 제이에이치앤코퍼레이션
-
-					<span>대표이사 : 이정훈</span>
-
-					<span>대표전화 : 070-1234-5678  평일 10:00 - 16:00</span>
-
-					<br class="m_none">
-
-					<span>E-mail: theartgallery@theartgallery.co.kr</span>
-
-					<address>주소 : 서울특별시 종로구 통일로18길 9, 105동 8층 3호</address>
-
-					<br class="m_none">
-
-					<span>사업자등록번호 : 709-88-02103</span>
-
-					<span>통신판매신고번호 : 2021-서울종로-1544</span>
-
-					<a href="#">사업자정보확인 &gt;</a>
-				</div>
-
-				<p class="copyright">© THE ART GALLERY , JHN Corp.   All Rights Reserved.</p>
-			</div>
-		</footer>
-		<!-- //footer -->
-
-	</div>
-
-	<script type="text/javascript">
-		$(document).ready( function(){
-			new Swiper(".main_slide", {
-				 autoplay: {
-					delay: 3000,
-					disableOnInteraction: false,
-				},
-				pagination: {
-					el: ".slide_paging",
-				},
-			});
-
-			$('.exibition_list').masonry({
-				// options
-				itemSelector: '.grid_exibition',
-				columnWidth: '.grid_sizer',
-				gutter: '.gutter_sizer',
-				percentPosition: true
-			});
-		});
-	</script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>THE ART</title>
+
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="contents/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="contents/css/layout.css" type="text/css" rel="stylesheet" />
+    <link href="contents/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="contents/css/sub.css" type="text/css" rel="stylesheet" />
+
+    <script
+      src="https://code.jquery.com/jquery-latest.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="contents/js/design.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="wrap main">
+      <!-- header -->
+      <header class="header">
+        <div class="cont_center">
+          <h1 class="logo">
+            <a href="#"
+              ><img src="contents/images/header/logo.png" alt="THE ART"
+            /></a>
+          </h1>
+
+          <button type="button" class="btn_gnb"><span>메뉴 열기</span></button>
+
+          <!-- gnb -->
+          <div class="gnb_area">
+            <p class="gnb_bg"></p>
+
+            <div class="gnb_layout">
+              <ul class="join_link_list">
+                <li><a href="#">Exibition</a></li>
+                <li><a href="#">Artist</a></li>
+              </ul>
+
+              <ul class="gnb_list">
+                <li><a href="#">About THE ART</a></li>
+                <li><a href="#">공간 시뮬레이션</a></li>
+                <li><a href="#">작가 신청하기</a></li>
+                <li><a href="#">문의하기</a></li>
+              </ul>
+
+              <!-- 로그인 안했을 경우 -->
+              <div class="btn_login_area" style="display: none">
+                <a href="#" class="btn_action">로그인</a>
+              </div>
+              <!-- //로그인 안했을 경우 -->
+
+              <!-- 로그인 했을 경우 -->
+              <div class="btn_login_area">
+                <a href="#" class="user_link"
+                  >갤러리스트 <strong>이정훈</strong> 님</a
+                >
+              </div>
+              <!-- //로그인 했을 경우 -->
+            </div>
+          </div>
+          <!-- //gnb -->
+
+          <a href="#" class="btn_mypage">마이페이지</a>
+
+          <a href="#" class="btn_search">검색</a>
+        </div>
+      </header>
+      <!-- //header -->
+
+      <!-- container -->
+      <div class="container">
+        <!-- 상단 슬라이드 -->
+        <div class="swiper main_slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="contents/images/main/main_visual1.jpg" alt="" />
+
+              <div class="main_slide_text">
+                미술품 무료 전시 신청 서비스 <br />
+                디아트 갤러리
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="contents/images/main/main_visual2.jpg" alt="" />
+
+              <div class="main_slide_text">당신이 있는곳이 갤러리 입니다.</div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="contents/images/main/main_visual3.jpg" alt="" />
+
+              <div class="main_slide_text">
+                디아트의 갤러리스트가 되어 <br />
+                당신의 공간에 아름다운 변화를 만들어 보세요.
+              </div>
+            </div>
+          </div>
+
+          <div class="slide_paging"></div>
+        </div>
+        <!-- //상단 슬라이드 -->
+
+        <div class="cont_center">
+          <!-- THE ART Best Piece -->
+          <div class="best_piece_area">
+            <h2 class="title_main"><span>THE ART </span>Best Piece</h2>
+
+            <div class="art_text">
+              예술은 손으로 만든 작품이 아니라 <br />예술가가 경험한 감정의
+              전달이다.
+
+              <p class="art_said">- 레프 톨스토이, Leo Tolstoy -</p>
+            </div>
+
+            <ul class="art_list">
+              <li>
+                <a href="#">
+                  <div class="art_img">
+                    <img src="contents/images/main/best_img1.jpg" alt="" />
+                  </div>
+
+                  <div class="artist_info">
+                    <span class="artist_name">김지희</span>
+
+                    <strong>정물32</strong>
+                  </div>
+
+                  <p class="art_info">종이에 파스텔, 90x67(cm)</p>
+
+                  <p class="art_display no">전시불가</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="art_img">
+                    <img src="contents/images/main/best_img2.jpg" alt="" />
+                  </div>
+
+                  <div class="artist_info">
+                    <span class="artist_name">김은송</span>
+
+                    <strong>봄길</strong>
+                  </div>
+
+                  <p class="art_info">캔버스에 유채, 100x100(cm)</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="art_img">
+                    <img src="contents/images/main/best_img3.jpg" alt="" />
+                  </div>
+
+                  <div class="artist_info">
+                    <span class="artist_name">고원태</span>
+
+                    <strong>WHITE DEER Gold rain</strong>
+                  </div>
+
+                  <p class="art_info">캔버스에 아크릴채색, 91x117(cm)</p>
+
+                  <p class="art_display">
+                    <span>전시중</span> /
+                    <span>2021. 10. 01 ~ 2022. 01. 01</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- //THE ART Best Piece -->
+
+          <!-- THE ART Exibition -->
+          <div class="exibition">
+            <h2 class="title_main">THE ART Exibition</h2>
+
+            <div class="exibition_list_area">
+              <!-- list -->
+              <div class="exibition_list">
+                <div class="grid_sizer"></div>
+                <div class="gutter_sizer"></div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img1.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">서현주</span>
+
+                      <strong>The door 1</strong>
+                    </div>
+
+                    <p class="art_info">캔버스에 유채, 90x67(cm)</p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img2.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">이향연</span>
+
+                      <strong>City-9</strong>
+                    </div>
+
+                    <p class="art_info">캔버스에 혼합재료, 97x130(cm)</p>
+
+                    <p class="art_display">
+                      <span>전시중</span> /
+                      <span>2021. 10. 01 ~ 2022. 01. 01</span>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img3.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">전미선</span>
+
+                      <strong>CastorPollux</strong>
+                    </div>
+
+                    <p class="art_info">캔버스에 혼합재료, 97x130(cm)</p>
+
+                    <p class="art_display">
+                      <span>전시중</span> /
+                      <span>2021. 10. 01 ~ 2022. 01. 01</span>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img4.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">고진이</span>
+
+                      <strong>Echo</strong>
+                    </div>
+
+                    <p class="art_info">캔버스에 유채, 118x118(cm)</p>
+
+                    <p class="art_display">
+                      <span>전시중</span> /
+                      <span>2021. 10. 01 ~ 2022. 01. 01</span>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img5.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">윤영</span>
+
+                      <strong>Self-Ficiton III-1</strong>
+                    </div>
+
+                    <p class="art_info">캔버스에 아크릴, 90x67(cm)</p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img6.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">남여주</span>
+
+                      <strong>Reflective 15004</strong>
+                    </div>
+
+                    <p class="art_info">
+                      캔버스에 아크릴채색, 레진, 비즈, 80x117(cm)
+                    </p>
+
+                    <p class="art_display no">
+                      <span>전시불가</span>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img7.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">정예솜</span>
+
+                      <strong>ingredient</strong>
+                    </div>
+
+                    <p class="art_info">캔버스에 아크릴, 72x72(cm)</p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img8.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">강호연</span>
+
+                      <strong>Coexistence no.1</strong>
+                    </div>
+
+                    <p class="art_info">실크스크린에 오일스틱, 65x96(cm)</p>
+
+                    <p class="art_display no">
+                      <span>전시불가</span>
+                    </p>
+                  </a>
+                </div>
+
+                <div class="grid_exibition">
+                  <a href="#">
+                    <div class="art_img">
+                      <img
+                        src="contents/images/main/exibition_img9.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="artist_info">
+                      <span class="artist_name">임희성</span>
+
+                      <strong>Tree 2</strong>
+                    </div>
+
+                    <p class="art_info">아크릴패널에 아크릴채색, 120x80(cm)</p>
+                  </a>
+                </div>
+              </div>
+              <!-- //list -->
+
+              <div class="btn_more_art">
+                <a href="#" class="btn_action">작품 더 보기</a>
+              </div>
+            </div>
+          </div>
+          <!-- //THE ART Exibition -->
+
+          <div class="join_theart_area">
+            <!-- The Gallerist -->
+            <div class="join_theart_box">
+              <h2 class="title_main">The Gallerist</h2>
+
+              <p class="descript_join_theart">
+                디아트의 갤러리스트가 되어 <br />당신의 공간에 아름다운 변화를
+                만들어보세요.
+              </p>
+
+              <div class="btn_join_theart">
+                <a href="#" class="btn_action">갤러리스트 가입하기</a>
+              </div>
+            </div>
+            <!-- //The Gallerist -->
+
+            <!-- The Artist -->
+            <div class="join_theart_box">
+              <h2 class="title_main">The Artist</h2>
+
+              <p class="descript_join_theart">
+                세상의 모든 공간의 예술화를 꿈꾸는 디아트 갤러리와 <br />함께
+                하실 창의적인 신진작가를 모십니다.
+              </p>
+
+              <div class="btn_join_theart">
+                <a href="#" class="btn_action">디아트 작가 지원하기</a>
+              </div>
+            </div>
+            <!-- //The Artist -->
+          </div>
+        </div>
+      </div>
+      <!-- //container -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="cont_center">
+          <ul class="f_menu">
+            <li class="m_none"><a href="#">About The Art</a></li>
+            <li class="m_none"><a href="#">작가 지원하기</a></li>
+            <li class="m_none"><a href="#">문의하기</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+
+          <ul class="f_sns_list">
+            <li><a href="#" class="insta">인스타그램</a></li>
+            <li><a href="#" class="youtube">유투브</a></li>
+            <li><a href="#" class="kakao">카카오톡</a></li>
+          </ul>
+
+          <p class="f_logo">
+            <img src="contents/images/footer/f_logo.png" alt="THE ART" />
+          </p>
+
+          <div class="f_info_area">
+            주식회사 제이에이치앤코퍼레이션
+
+            <span>대표이사 : 이정훈</span>
+
+            <span>대표전화 : 070-1234-5678 평일 10:00 - 16:00</span>
+
+            <br class="m_none" />
+
+            <span>E-mail: theartgallery@theartgallery.co.kr</span>
+
+            <address>
+              주소 : 서울특별시 종로구 통일로18길 9, 105동 8층 3호
+            </address>
+
+            <br class="m_none" />
+
+            <span>사업자등록번호 : 709-88-02103</span>
+
+            <span>통신판매신고번호 : 2021-서울종로-1544</span>
+
+            <a href="#">사업자정보확인 &gt;</a>
+          </div>
+
+          <p class="copyright">
+            © THE ART GALLERY , JHN Corp. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
+      <!-- //footer -->
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        new Swiper(".main_slide", {
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".slide_paging",
+          },
+        });
+
+        $(".exibition_list").masonry({
+          // options
+          itemSelector: ".grid_exibition",
+          columnWidth: ".grid_sizer",
+          gutter: ".gutter_sizer",
+          percentPosition: true,
+        });
+      });
+    </script>
+  </body>
 </html>
