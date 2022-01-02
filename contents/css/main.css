@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+/* 1024px ~ ----------- */
+.main_slide{height:740px; margin-bottom:140px;}
+
+.main_slide .swiper-slide > img{width:100%; height:100%; object-fit:cover;}
+
+.main_slide_text{display:flex; width:100%; height:100%; align-items:center; justify-content:center; 
+  font-size:45px; color:#fff; line-height:60px; font-weight:700; text-align:center;
+  position:absolute; left:0; top:0; z-index:2;
+}
+
+.slide_paging{text-align:center; position:absolute; left:0; right:0; bottom:55px !important; z-index:3;}
+.slide_paging .swiper-pagination-bullet{width:12px; height:12px; background-color:transparent; border:2px solid #fff; opacity:1;}
+.slide_paging .swiper-pagination-bullet-active{background-color:#fff;}
+
+
+/* best piece */
+.best_piece_area{margin-bottom:150px;}
+
+.title_main{padding-bottom:35px; font-size:50px; text-align:center; font-weight:400; letter-spacing:-0.25px; position:relative;}
+.title_main:after{content:""; width:160px; height:2px; margin-left:-80px; background-color:#000;
+  position:absolute; left:50%; bottom:0;
+}
+
+.art_text{margin-top:95px; margin-bottom:100px; font-size:25px; text-align:center; line-height:1.6; font-weight:300;}
+.art_said{margin-top:15px; font-family:"Manrope", 'Noto Sans KR'; font-size:20px; color:#999; font-style:italic;}
+
+.art_list{display:flex; margin-left:-3.125%;}
+.art_list li{width:31.25%; margin-left:3.125%;}
+.art_list li a{display:block;}
+
+.art_img{}
+.art_img img{width:100%;}
+
+.artist_info{margin-top:25px; font-size:25px; color:#000; font-weight:700;}
+.artist_name{padding-right:17px; margin-right:10px; position:relative;}
+.artist_name:after{content:""; width:2px; height:16px; margin-top:-8px; background-color:#d5d5d5;
+  position:absolute; right:0; top:50%;
+}
+
+.art_info{margin-top:15px; font-size:20px; color:#999;}
+ 
+.art_display{margin-top:7px;font-size:20px; color:#19b3b8;}
+.art_display.no{color:#ff7448;}
+
+ 
+/* exibition */
+.exibition_list_area{margin-top:100px;}
+
+.grid_exibition{margin-bottom:80px;}
+
+.grid_sizer, .grid_exibition{width:31.25%;}
+.grid_sizer img, .grid_exibition img{width:100%;}
+.gutter_sizer{width:3.125%;}
+
+.btn_more_art{padding-top:20px; text-align:center;}
+.btn_action{display:inline-block; min-width:230px; height:60px; padding:0 40px; background-color:#000;
+  font-size:20px; color:#f5f5f5; text-align:center; line-height:60px;
+}
+
+
+.join_theart_area{display:flex; margin-top:155px; justify-content:space-between;}
+.join_theart_box{width:48.43%; height:662px; padding-top:140px; background-color:#f5f5f5;}
+.descript_join_theart{margin-top:70px; font-size:25px; line-height:1.6; font-weight:300; text-align:center; letter-spacing:-0.25px;}
+.btn_join_theart{margin-top:70px; text-align:center;}
+
+
+
+
+/* ~ 1024px ----------- */
+@media only screen 
+and (max-width : 1024px)
+{
+
+	.slide_paging{display:none;}
+
+}
+
+
+
+/* ~ 767px ----------- */
+@media only screen 
+and (max-width : 767px)
+{	
+	
+	.main_slide{height:calc(100vh - 60px); margin-bottom:90px;}
+
+	.main_slide_text{font-size:24px; line-height:1.67;}
+
+
+	/* best piece */
+	.best_piece_area{margin-bottom:140px;}
+
+	.title_main{padding-bottom:20px; font-size:40px; line-height:40px;}
+	.title_main span{display:block;}
+
+	.art_text{margin-top:70px; margin-bottom:80px; font-size:20px;}
+	.art_said{margin-top:25px; font-size:16px;}
+
+	.art_list{display:block; margin-left:0;}
+	.art_list li{width:auto; margin-left:0; margin-top:55px;}
+	.art_list li:first-child{margin-top:0;}
+	.art_list li a{display:block;}
+
+	.artist_info{font-size:22px;}
+	.art_info{margin-top:10px; font-size:16px;}	 
+	.art_display{margin-top:5px; font-size:16px;}
+
+	 
+	/* exibition */
+	.exibition_list_area{margin-top:80px;}
+
+	.grid_exibition{margin-bottom:40px;}
+
+	.grid_sizer, .grid_exibition{width:47.9%;}
+	.grid_sizer img, .grid_exibition img{width:100%;}
+	.gutter_sizer{width:4.17%;}
+
+	.grid_exibition .artist_info{margin-top:17px; font-size:18px; word-break:break-all;}
+	.grid_exibition .artist_name{padding-right:12px; margin-right:5px;}
+	.grid_exibition .art_info{margin-top:5px; font-size:14px; line-height:1.42;}
+	.grid_exibition .art_display{margin-top:0; font-size:14px; line-height:1.42;}
+
+	.btn_more_art{padding-top:40px;}
+	.btn_action{min-width:200px; height:50px; padding:0 32px; font-size:16px; line-height:50px;}
+
+	.join_theart_area{display:block; margin:150px -5.33vw 0;}
+	.join_theart_box{width:auto; height:auto; padding:95px 5.33vw 100px;}
+	.join_theart_box + .join_theart_box{margin-top:40px;}
+	.descript_join_theart{margin-top:50px; font-size:20px;}
+	.btn_join_theart{margin-top:50px;}
+
+}
