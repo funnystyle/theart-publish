@@ -81,19 +81,148 @@
 
 		<!-- container -->
 		<div class="container">
-			<div class="cont_center content_error">
-				<h2 class="title_h2">페이지를 찾을 수 없습니다.</h2>
-				
-				<div class="text_error">
-					찾으려는 페이지의 주소가 잘못 입력되었거나, <br>
-					주소의 변경 혹은 삭제로 인해 사용하실 수 없습니다. <br>
-					다시 한번 확인해 주세요.
+			<div class="cont_center contents_login">
+				<h2 class="title_main">THE ART Gallerist</h2>
+
+				<p class="descript_signup">디아트의 갤러리스트가 되어<br>당신의 공간에 아름다운 변화를 만들어보세요.</p>
+
+				<ul class="login_input_list">
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="메일 주소를 입력하세요." title="메일 주소 입력">
+
+							<div class="form_r_area">
+								<a href="#" class="btn_form inactive">인증메일 발송</a>
+							</div>
+						</div>
+
+						<p class="validate_text">메일주소 형식이 올바르지 않습니다.</p>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="메일 주소를 입력하세요." title="메일 주소 입력" value="aaa@gmail.com">
+
+							<div class="form_r_area">
+								<a href="#" class="btn_form">인증메일 발송</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="메일 주소를 입력하세요." title="메일 주소 입력" value="aaa@gmail.com">
+
+							<div class="form_r_area">
+								<a href="#" class="btn_form black">재발송</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="메일 주소를 입력하세요." title="메일 주소 입력" value="aaa@gmail.com">
+
+							<div class="form_r_area">
+								<span class="certify_complete">인증완료</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="발송받은 인증코드를 입력하세요." title="인증코드 입력">
+
+							<div class="form_r_area">
+								<span class="certify_time">05:00</span>
+
+								<a href="#" class="btn_form inactive">확인</a>
+							</div>
+						</div>
+
+						<p class="validate_text">입력시간이 지났습니다. 인증메일을 재전송하세요.</p>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="발송받은 인증코드를 입력하세요." title="인증코드 입력" value="123456">
+
+							<div class="form_r_area">
+								<a href="#" class="btn_form black">확인</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="이름" title="이름 입력">
+						</div>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="text" class="input_form" placeholder="갤러리스트명 (닉네임)" title="갤러리스트명 (닉네임) 입력">
+						</div>
+
+						<p class="notice_txt">※ 글 작성 시 닉네임으로 등록되어 미입력 시 이름으로 등록됩니다.</p>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="password" class="input_form" placeholder="비밀번호" title="비밀번호 입력">
+						</div>
+
+						<p class="validate_text">영문, 숫자, 특수문자 포함 8자 이상</p>
+					</li>
+					<li>
+						<div class="input_form_area">
+							<input type="password" class="input_form" placeholder="비밀번호 재확인" title="비밀번호 재 입력">
+						</div>
+
+						<p class="validate_text">입력하신 내용이 정확하지 않습니다.</p>
+					</li>
+				</ul>
+
+				<div class="term_agree_area">
+					<span class="d_check all_agree_area">
+						<input type="checkbox" id="all_agree">
+						<label for="all_agree">서비스 약관 전체 동의</label>
+					</span>
+
+					<ul class="term_agree_list">
+						<li>
+							<span class="d_check">
+								<input type="checkbox" id="agree1">
+								<label for="agree1">만 14세 이상입니다. (필수)</label>
+							</span>
+						</li>
+						<li>
+							<span class="d_check">
+								<input type="checkbox" id="agree2">
+								<label for="agree2">서비스 이용약관 동의 (필수)</label>
+							</span>
+
+							<a href="#" class="term_link">내용보기</a>
+						</li>
+						<li>
+							<span class="d_check">
+								<input type="checkbox" id="agree3">
+								<label for="agree3">개인정보 수집 및 이용 동의(필수)</label>
+							</span>
+
+							<a href="#" class="term_link">내용보기</a>
+						</li>
+						<li>
+							<span class="d_check">
+								<input type="checkbox" id="agree4">
+								<label for="agree4">마케팅 수신 동의 (선택)</label>
+							</span>
+
+							<a href="#" class="term_link">내용보기</a>
+						</li>
+					</ul>
 				</div>
 
-				<div class="btn_home">
-					<a href="#">디아트 홈</a>
+				<div class="btn_login_area2">
+					<a href="#" class="btn_login active">디아트 가입</a>
 				</div>
-			</div>			
+
+				<div class="btn_back_area">
+					<a href="#" class="btn_back">이전 화면</a>
+				</div>
+			</div>
 		</div>
 		<!-- //container -->
 

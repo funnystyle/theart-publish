@@ -102,6 +102,9 @@ body.open .gnb_layout{left:0; transition:all 0.3s;}
   font-size:0; color:transparent; position:absolute; right:80px; top:50px;
 }
 
+.log_inout_link{margin-top:40px;}
+.log_inout_link a{margin:0 10px; border-bottom:1px solid #000; color:#000;}
+
 
 /* container */
 .container{padding-top:120px;}

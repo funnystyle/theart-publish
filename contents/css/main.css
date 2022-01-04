@@ -36,8 +36,10 @@
 .art_list li{width:31.25%; margin-left:3.125%;}
 .art_list li a{display:block;}
 
-.art_img{}
-.art_img img{width:100%;}
+.art_img{width:100%; overflow:hidden;}
+.art_img img{width:100%; transition:all 0.3s;}
+
+.art_img:hover img{transform:scale(1.1); transition:all 0.3s;}
 
  
 /* exibition */

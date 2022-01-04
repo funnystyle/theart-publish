@@ -96,9 +96,13 @@ $(document).ready(function(){
 		$(".simulation_area").each(function() {
 			if($(window).scrollTop() >= $(this).offset().top - 500) {
 				$(".f_floating_area").addClass("show");
+
+				$(".btn_top").addClass("up");
 			}
 			else if($(window).scrollTop() == 0){
 				$(".f_floating_area").removeClass("show");
+
+				$(".btn_top").removeClass("up");
 			}
 		});
 	});

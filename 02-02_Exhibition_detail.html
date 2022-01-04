@@ -11,7 +11,7 @@
 <link href="contents/css/main.css" type="text/css" rel="stylesheet">
 <link href="contents/css/sub.css" type="text/css" rel="stylesheet">
 
-<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
@@ -50,14 +50,22 @@
 						</ul>
 
 						<!-- 로그인 안했을 경우 -->
-						<div class="btn_login_area" style="display:none;">
+						<div class="btn_login_area">
 							<a href="#" class="btn_action">로그인</a>
+
+							<p class="log_inout_link">
+								처음이신가요? <a href="#">디아트 가입하기</a>
+							</p>
 						</div>
 						<!-- //로그인 안했을 경우 -->
 
 						<!-- 로그인 했을 경우 -->
-						<div class="btn_login_area">
+						<div class="btn_login_area" style="display:none;">
 							<a href="#" class="user_link">갤러리스트 <strong>이정훈</strong> 님</a>
+
+							<p class="log_inout_link">
+								<a href="#">로그아웃</a>
+							</p>
 						</div>
 						<!-- //로그인 했을 경우 -->
 					</div>
@@ -192,7 +200,7 @@
 
 					<p class="simul_description">
 						작품을 전시했을 때 예상되는 실물 크기입니다. <br>
-						우측의 작품을 선택하여 원하는 곳으로 자유롭게 옯겨보면서 <br>
+						우측의 작품을 선택하여 원하는 곳으로 자유롭게 옯겨보면서 <br class="m_none">
 						내 공간에 어울리는 인테리어를 예상하며 배치해보세요. 
 					</p>
 
@@ -553,7 +561,8 @@
 
 			$( ".simul_art_img" ).draggable();
 
-			 new Swiper(".art_img_box", {
+			new Swiper(".art_img_box", {
+				loop: true,
 				pagination: {
 					el: ".slide_paging_num",
 					type: "fraction",

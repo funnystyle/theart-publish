@@ -82,7 +82,7 @@
 
 .btn_display_buy{display:flex; margin-top:75px; justify-content:space-between;}
 
-.btn_default{display:inline-block; width:46%; height:60px; padding:0 40px; background-color:#fff; border:2px solid #000;
+.btn_default{display:inline-block; width:46%; height:60px; background-color:#fff; border:2px solid #000;
   font-size:20px; color:#000; text-align:center; line-height:60px;
 }
 .btn_default:hover{background-color:#efefef;}
@@ -183,8 +183,10 @@
 
 
 .btn_top{width:56px; height:56px; background-image:url("../images/icon/btn_top.png");
-  font-size:0; color:transparent; position:fixed; right:70px; bottom:210px; z-index:2;
+  font-size:0; color:transparent; position:fixed; right:70px; bottom:50px; z-index:2;
+  transition:all 0.3s;
 }
+.btn_top.up{bottom:210px; transition:all 0.3s;}
 
 
 /* 플로팅 영역 */
@@ -265,12 +267,15 @@
 .layer_bg{background-color:rgba(0,0,0,0.7); position:fixed; left:0; right:0; top:0; bottom:0; z-index:11;}
 
 .layer_layout{min-width:260px; width:660px; padding:38px; background-color:#fff; position:relative; z-index:12;}
-.title_h2{margin-bottom:40px; font-size:40px; font-weight:400;}
+.layer_top{padding-bottom:40px; position:relative;}
+.title_h2{font-size:40px; font-weight:400;}
 
-.close_layer{width:20px; height:20px; text-indent:-9999px; position:absolute; right:40px; top:40px;}
+.close_layer{width:20px; height:20px; text-indent:-9999px; position:absolute; right:0; top:0;}
 .close_layer:before, .close_layer:after{content:""; width:2px; height:100%; background-color:#000; position:absolute; left:50%; top:0;}
 .close_layer:before{transform:rotate(45deg);}
 .close_layer:after{transform:rotate(-45deg);}
+
+.layer_container{height:551px; overflow-y:auto;}
 
 .title_h3{margin-bottom:30px; font-size:25px; font-weight:700;}
 
@@ -324,14 +329,16 @@
 
 
 /* search */
-.layer_pop_area.search .layer_layout{padding-top:76px; padding-bottom:80px;}
+.layer_pop_area.search .layer_layout{padding-top:36px; padding-bottom:80px;}
+.layer_pop_area.search .layer_container{height:auto;}
 
 
 /* error */
-.content_error{display:flex; height:calc(100vh - 742px); align-items:center; justify-content:center; flex-direction:column;
+.content_error{display:flex; min-height:calc(100vh - 742px); padding:150px 0;
+  align-items:center; justify-content:center; flex-direction:column;
   text-align:center;
 }
-.text_error{font-size:18px; line-height:2;}
+.text_error{margin-top:40px; font-size:18px; line-height:2;}
 
 .btn_home{margin-top:60px;}
 .btn_home a{font-size:20px; color:#000; font-weight:300; position:relative;}
@@ -341,6 +348,103 @@
 }
 
 
+/* login */
+.contents_login{width:768px; padding:145px 100px 200px;}
+
+.login_input_list{margin-top:140px; margin-bottom:40px;}
+.login_input_list li{margin-top:50px; position:relative;}
+.login_input_list li:first-child{margin-top:0;}
+
+.input_form_area{border-bottom:2px solid #000; position:relative;}
+
+.input_form{width:100%; height:60px; font-size:20px; line-height:60px;}
+.input_form::-moz-placeholder{color:#aaa;}
+.input_form:-ms-input-placeholder{color:#aaa;}
+.input_form::placeholder{color:#aaa;}
+
+.input_error{width:20px; height:20px; margin-top:-10px; background-image:url("../images/icon/icon_exclamation.png"); 
+  font-size:0; color:transparent; position:absolute; right:0; top:50%;
+}
+
+.validate_text{font-size:18px; color:#ff7448; position:absolute; left:0; bottom:-25px;}
+
+
+.auto_search_area{position:relative;}
+
+.d_check{display:inline-block; position:relative;}
+.d_check input[type="checkbox"]{opacity:0; position:absolute; left:0; top:0;}
+.d_check label{display:inline-block; padding-left:40px; 
+  font-size:20px; line-height:30px; cursor:pointer; position:relative;
+}
+.d_check label:before{content:""; width:26px; height:26px; 
+  border:2px solid #000;
+  position:absolute; left:0; top:0;
+}
+
+.d_check input[type="checkbox"]:checked + label:before {background:url("../images/icon/check_on.png") no-repeat center center;}
+
+.link_pw{display:inline-block; padding-bottom:8px; border-bottom:1px solid #000;
+  font-size:18px; color:#000; position:absolute; right:0; top:5px;
+}
+
+.btn_login_area2{margin-top:100px;}
+.btn_login{display:block; height:60px; background-color:#aaa; 
+  font-size:20px; color:#f5f5f5; line-height:60px; text-align:center;
+}
+.btn_login.active{background-color:#000; color:#fff;}
+
+.join_link{margin-top:60px; font-size:20px; text-align:center;}
+.join_link a{margin-left:30px; padding-bottom:5px; border-bottom:1px solid #000; font-size:20px; color:#000;}
+
+.btn_back_area{margin-top:100px;}
+.btn_back{display:inline-block; padding-left:24px; font-size:20px; color:#000; font-weight:300; position:relative;}
+.btn_back:before{content:""; width:8px; height:14px; margin-top:-7px; background-image:url("../images/icon/arrow_back.png"); 
+  position:absolute; left:0; top:50%;
+}
+
+
+/* sign up */
+.descript_signup{margin-top:70px; margin-bottom:-10px; font-size:25px; font-weight:300; line-height:40px; text-align:center;}
+
+.form_r_area{transform:translateY(-50%); position:absolute; right:0; top:50%;}
+
+.btn_form{display:inline-block; height:40px; padding:0 17px; background-color:#fff; border:2px solid #000;
+  font-size:18px; color:#000; line-height:38px; text-align:center;
+}
+.btn_form.inactive{background-color:#aaa; border-color:#aaa; color:#f5f5f5;}
+.btn_form.black{background-color:#000; color:#fff;}
+
+.certify_complete{font-size:18px; color:#19b3b8; line-height:60px;}
+.certify_time{margin-right:15px; font-size:20px;}
+
+.notice_txt{font-size:18px; color:#aaa; position:absolute; left:0; bottom:-25px;}
+
+.term_agree_area{margin-top:125px;}
+
+.d_check.all_agree_area{display:block; padding-bottom:19px; border-bottom:2px solid #000;}
+.d_check.all_agree_area label{padding-left:45px; font-size:25px;}
+
+.term_agree_list{margin-top:40px;}
+.term_agree_list li{margin-top:15px; position:relative;}
+.term_agree_list li:first-child{margin-top:0;}
+
+.term_link{padding-bottom:7px; border-bottom:1px solid #000; font-size:18px; color:#000; position:absolute; right:0; top:5px;}
+
+
+/* 약관 레이어팝업 */
+.layer_top .title_h3{margin-bottom:0;}
+.layer_pop_area.term .layer_container{margin-top:-10px; padding-top:25px; border-top:2px solid #000;}
+
+.term_text_area + .term_text_area{margin-top:35px;}
+.title_term{font-weight:400;}
+
+
+/* 회원가입 완료 */
+.text_signup{margin-top:45px; font-size:20px; line-height:35px; text-align:center;}
+
+.home_link_area{margin-top:140px; text-align:center;}
+.home_link_area a{margin-left:90px; font-weight:700;}
+.home_link_area a:first-child{margin-left:0;}
 
 
 
@@ -367,7 +471,7 @@ and (max-width : 1024px)
 	.title_simulation{padding-bottom:0; margin-bottom:70px; text-align:center; position:static; order:1;}
 	.title_simulation:after{display:none;}
 
-	.simul_description{margin-top:30px; font-size:18px; color:#999; line-height:30px; position:static; order:4;}
+	.simul_description{width:auto; margin-top:30px; font-size:18px; color:#999; line-height:30px; position:static; order:4;}
 
 	.simul_space_area{order:2;}
 
@@ -387,7 +491,8 @@ and (max-width : 1024px)
 	.intro_box_area + .intro_box_area{margin-top:55px;}
 
 
-	.btn_top{right:35px; bottom:150px;}
+	.btn_top{right:35px; bottom:35px;}
+	.btn_top.up{bottom:150px;}
 
 	
 	/* 플로팅 영역 */
@@ -526,7 +631,8 @@ and (max-width : 767px)
 	.info_text_notice li{padding-left:8px; font-size:16px; line-height:30px;}
 
 
-	.btn_top{right:15px; bottom:105px;}
+	.btn_top{right:15px; bottom:15px;}
+	.btn_top.up{bottom:105px;}
 
 
 	/* 플로팅 영역 */
@@ -570,10 +676,11 @@ and (max-width : 767px)
 
 	/* 레이어팝업 */
 	.layer_pop_area{align-items:end;}
-	.layer_layout{min-width:auto; width:100%; height:140vw; padding:30px 5.33vw; overflow-y:auto;}
-	.title_h2{margin-bottom:20px; font-size:30px;}
+	.layer_layout{min-width:auto; width:100%; padding:30px 5.33vw 0;}
+	.layer_top{padding-bottom:20px;}
+	.title_h2{font-size:30px;}
 
-	.close_layer{right:20px; top:30px;}
+	.layer_container{height:108vw; padding-bottom:30px;}
 
 	.title_h3{margin-bottom:30px; font-size:22px;}
 
@@ -594,11 +701,78 @@ and (max-width : 767px)
 
 	/* search */
 	.layer_pop_area.search{align-items:flex-start;}
-	.layer_pop_area.search .layer_layout{height:auto; padding-top:114px; padding-bottom:75px;}
+	.layer_pop_area.search .layer_layout{height:auto; padding-top:26px; padding-bottom:75px;}
+	.layer_pop_area.search .layer_container{padding-top:68px; padding-bottom:0;}
 
 
 	/* error */
-	.text_error{font-size:14px;}
+	.text_error{margin-top:20px; font-size:14px;}
 
 	.btn_home a{margin-left:-20px;}
+
+
+	/* login */
+	.contents_login{width:auto; padding:100px 20px 150px;}
+
+	.contents_login .title_main{font-size:30px;}
+
+	.login_input_list{margin-top:65px; margin-bottom:30px;}
+	.login_input_list li{margin-top:40px;}
+
+	.input_form{height:50px; font-size:16px; line-height:50px;}
+
+	.validate_text{font-size:14px; bottom:-20px;}
+
+	.d_check label{padding-left:34px; font-size:16px; line-height:25px;}
+	.d_check label:before{width:21px; height:21px;}
+
+	.d_check input[type="checkbox"]:checked + label:before {background-size:16px;}
+
+	.link_pw{font-size:14px;}
+
+	.btn_login_area2{margin-top:80px;}
+	.btn_login{height:50px; font-size:16px; line-height:50px;}
+
+	.join_link{margin-top:40px; font-size:16px;}
+	.join_link a{margin-left:25px; font-size:16px;}
+
+	.btn_back_area{margin-top:80px;}
+	.btn_back{padding-left:17px; font-size:16px;}
+
+
+	/* sign up */
+	.descript_signup{margin-top:50px; margin-bottom:-5px; font-size:20px; line-height:30px;}
+
+	.btn_form{height:30px; padding:0 10px; font-size:14px; line-height:28px;}
+
+	.certify_complete{font-size:14px; line-height:50px;}
+	.certify_time{margin-right:5px; font-size:16px;}
+
+	.notice_txt{font-size:14px; bottom:-20px;}
+
+	.term_agree_area{margin-top:100px;}
+
+	.d_check.all_agree_area label{padding-left:35px; font-size:20px;}
+
+	.term_agree_list{margin-top:30px;}
+
+	.term_link{font-size:14px; top:5px;}
+
+
+	/* 약관 레이어팝업 */
+	.layer_pop_area.term{padding:0 20px; align-items:center;}
+	.layer_pop_area.term .layer_layout{padding-bottom:30px;}
+
+	.layer_top .title_h3{margin-bottom:0;}
+	.layer_pop_area.term .layer_container{height:90vw; margin-top:0;}
+
+	.layer_pop_area.term .btn_layer_area{justify-content:center;}
+
+
+	/* 회원가입 완료 */
+	.text_signup{margin-top:30px; font-size:16px; line-height:26px;}
+
+	.home_link_area{margin-top:90px;}
+	.home_link_area a{margin-left:16vw; font-size:16px;}
+	.home_link_area a:after{right:-20px;}
 }
