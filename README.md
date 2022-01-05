@@ -1,7 +1,9 @@
 # theart-publish
 The Art Gallery Publish Files
 
-|화면|링크|날짜|
+최종 반영 날짜 : 2022-01-04
+
+|화면|링크|최초날짜|
 |---|---|---|
 |레이어팝업|[00_COM-01-06_LP.html](00_COM-01-06_LP.html)|2021-12-29|
 |통합검색|[00_COM-03_search.html](00_COM-03_search.html)|2021-12-29|
