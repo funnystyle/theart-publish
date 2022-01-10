@@ -42,13 +42,13 @@
 .art_img:hover img{transform:scale(1.1); transition:all 0.3s;}
 
  
-/* exibition */
-.exibition_list_area{margin-top:100px;}
+/* exhibition */
+.exhibition_list_area{margin-top:100px;}
 
-.grid_exibition{margin-bottom:80px;}
+.grid_exhibition{margin-bottom:80px;}
 
-.grid_sizer, .grid_exibition{width:31.25%;}
-.grid_sizer img, .grid_exibition img{width:100%;}
+.grid_sizer, .grid_exhibition{width:31.25%;}
+.grid_sizer img, .grid_exhibition img{width:100%;}
 .gutter_sizer{width:3.125%;}
 
 .btn_more_art{padding-top:20px; text-align:center;}
@@ -101,19 +101,19 @@ and (max-width : 767px)
 	.art_list li a{display:block;}
 
 	 
-	/* exibition */
-	.exibition_list_area{margin-top:80px;}
+	/* exhibition */
+	.exhibition_list_area{margin-top:80px;}
 
-	.grid_exibition{margin-bottom:40px;}
+	.grid_exhibition{margin-bottom:40px;}
 
-	.grid_sizer, .grid_exibition{width:47.9%;}
-	.grid_sizer img, .grid_exibition img{width:100%;}
+	.grid_sizer, .grid_exhibition{width:47.9%;}
+	.grid_sizer img, .grid_exhibition img{width:100%;}
 	.gutter_sizer{width:4.17%;}
 
-	.grid_exibition .artist_info{margin-top:17px; font-size:18px; word-break:break-all;}
-	.grid_exibition .artist_name{padding-right:12px; margin-right:5px;}
-	.grid_exibition .art_info{margin-top:5px; font-size:14px; line-height:1.42;}
-	.grid_exibition .art_display{margin-top:0; font-size:14px; line-height:1.42;}
+	.grid_exhibition .artist_info{margin-top:17px; font-size:18px; word-break:break-all;}
+	.grid_exhibition .artist_name{padding-right:12px; margin-right:5px;}
+	.grid_exhibition .art_info{margin-top:5px; font-size:14px; line-height:1.42;}
+	.grid_exhibition .art_display{margin-top:0; font-size:14px; line-height:1.42;}
 
 	.btn_more_art{padding-top:40px;}
 	.btn_action{min-width:200px; height:50px; padding:0 32px; font-size:16px; line-height:50px;}

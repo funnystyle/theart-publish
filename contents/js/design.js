@@ -13,7 +13,7 @@ setInterval(function() {
         hasScrolled();
         didScroll = false;
     }
-}, 250);
+}, 50); /* funny */
 
 function hasScrolled() {
     var st = $(this).scrollTop();
@@ -53,10 +53,18 @@ $(document).ready(function(){
 			$("body").toggleClass("open");
 
 			$(".gnb_list > li").removeClass("on");
+
+			/* funny */
+			if (isScroll) {
+				scroll.disable();
+			} else {
+				scroll.enable();
+			}
 		})
 	});
 
 	$(".gnb_bg").on("click", function(){
+		scroll.enable(); /* funny */
 		$("body").removeClass("open");
 		$(".btn_gnb").removeClass('active');
 	});
@@ -118,16 +126,44 @@ $(document).ready(function(){
 		e.preventDefault();
 
 		$(".layer_pop_area").removeClass("open");
-		$(".wrap").removeClass("layer_open");
+		// $(".wrap").removeClass("layer_open"); /* funny */
+		scroll.enable(); /* funny */
 	});
 
 	$(".layer_open_link").on("click", function(e){
 		e.preventDefault();
+		scroll.disable(); /* funny */
 
 		var layer_select = $(this).attr("href");
 
 		$(layer_select).addClass("open");
-		$(".wrap").addClass("layer_open");
+		// $(".wrap").addClass("layer_open"); /* funny */
 	});
 	/* //layer pop */
 });
+
+/* funny */
+// https://note.toice.net/2018/01/15/layer-popup-with-body-scroll-disable/
+var isScroll = true;
+var scroll = {
+    disable: function() {
+        // $('body')
+        //     .css('overflow-y', 'scroll');
+
+        $('body').css({
+            'position': 'fixed',
+            'top': -$(window).scrollTop(),
+            'left': 0,
+            'width': '100%'
+        });
+        isScroll = false;
+    },
+    enable: function() {
+        var scrollPosition = Math.abs($('body').css('top').split('px')[0]);
+
+        // $('.container').removeAttr('style');
+        $('body').removeAttr('style');
+        $(window).scrollTop(scrollPosition);
+        isScroll = true;
+    }
+};
