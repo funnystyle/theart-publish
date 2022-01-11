@@ -14,14 +14,14 @@
 
 /* header */
 .header{height:120px; background-color:#fff; box-shadow:0px 5px 10px rgba(0,0,0,0.05); 
-  position:fixed; left:0; right:0; top:0; z-index:3;
+  position:fixed; left:0; right:0; top:0; z-index:10;
   transition:all 0.3s;
 }
 .header .cont_center{position:relative;}
 
 body.open .header{border-bottom:1px solid #eee;}
 
-.nav_up{top:-130px;}
+.wrap.nav_up .header{top:-130px;}
 
 .logo{padding-top:40px; text-align:center;}
 
@@ -50,7 +50,7 @@ body.open .header{border-bottom:1px solid #eee;}
 }
 
 
-.gnb_area{display:none; width:100%; position:fixed; left:0; top:121px; bottom:0; z-index:2;}
+.gnb_area{display:none; width:100%; position:fixed; left:0; top:121px; bottom:0; z-index:10;}
 
 .gnb_bg{display:none; content:""; width:100%; background-color:rgba(0,0,0,0.6); 
   position:fixed; left:0; top:120px; bottom:0;
@@ -107,7 +107,7 @@ body.open .gnb_layout{left:0; transition:all 0.3s;}
 
 
 /* container */
-.container{padding-top:120px;}
+.container{padding-top:120px; position:relative;}
 
 .artist_info{margin-top:25px; font-size:25px; color:#000; font-weight:700;}
 .artist_name{padding-right:17px; margin-right:10px; position:relative;}
@@ -169,7 +169,7 @@ and (max-width : 767px)
 	/* header */
 	.header{height:60px;}
 
-	.nav_up{top:-70px;}
+	.wrap.nav_up .header{top:-70px;}
 
 	.logo{padding-top:16px;}
 	.logo img{width:100px;}

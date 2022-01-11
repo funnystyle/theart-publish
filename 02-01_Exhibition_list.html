@@ -81,42 +81,70 @@
 
 		<!-- container -->
 		<div class="container">
+			<!-- 220111 : 마크업 위치 수정 -->
+			<!-- sort -->
+			<div class="sort_select_area">
+				<button type="button" class="btn_sort">가격 높은 순</button>
+
+				<ul class="sort_select_list">
+					<li>
+						<span class="select_radio">
+							<input type="radio" id="sort1" name="sort">
+							<label for="sort1">가격 낮은 순</label>
+						</span>
+					</li>
+					<li>
+						<span class="select_radio">
+							<input type="radio" id="sort2" name="sort">
+							<label for="sort2">등록 순</label>
+						</span>
+					</li>
+					<li>
+						<span class="select_radio">
+							<input type="radio" id="sort3" name="sort">
+							<label for="sort3">전시 가능</label>
+						</span>
+					</li>
+					<li>
+						<span class="select_radio">
+							<input type="radio" id="sort4" name="sort">
+							<label for="sort4">구매 가능</label>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!-- //sort -->
+			<!-- //220111 : 마크업 위치 수정 -->
+
 			<div class="cont_center content_sub">
+				<!-- 탭 영역 -->
+				<div class="tab_area">
+					<ul class="clear tab_list2">
+						<li><a href="#" class="on">작가</a></li>
+						<li><a href="#">작품</a></li>
+					</ul>
+
+					<div class="list_search_area">
+						<input type="text" class="input_list_search" placeholder="검색어를 입력하세요.">
+						<input type="button" class="btn_list_search" value="검색">
+					</div>
+				</div>
+				<!-- //탭 영역 -->
+
 				<div class="total_sort_area">
 					<p class="total_art">총 <strong>100,024</strong> 작품</p>
 
-					<!-- sort -->
-					<div class="sort_select_area">
-						<button type="button" class="btn_sort">가격 높은 순</button>
+					<div class="check_display_soldout">
+						<span class="d_check">
+							<input type="checkbox" id="display">
+							<label for="display">전시 중</label>
+						</span>
 
-						<ul class="sort_select_list">
-							<li>
-								<span class="select_radio">
-									<input type="radio" id="sort1" name="sort">
-									<label for="sort1">가격 낮은 순</label>
-								</span>
-							</li>
-							<li>
-								<span class="select_radio">
-									<input type="radio" id="sort2" name="sort">
-									<label for="sort2">등록 순</label>
-								</span>
-							</li>
-							<li>
-								<span class="select_radio">
-									<input type="radio" id="sort3" name="sort">
-									<label for="sort3">전시 가능</label>
-								</span>
-							</li>
-							<li>
-								<span class="select_radio">
-									<input type="radio" id="sort4" name="sort">
-									<label for="sort4">구매 가능</label>
-								</span>
-							</li>
-						</ul>
+						<span class="d_check">
+							<input type="checkbox" id="soldout">
+							<label for="soldout">판매완료</label>
+						</span>
 					</div>
-					<!-- //sort -->
 				</div>
 				
 				<!-- list -->

@@ -26,11 +26,11 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').removeClass('nav_down').addClass('nav_up');
+        $('.wrap').removeClass('nav_down').addClass('nav_up');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav_up').addClass('nav_down');
+            $('.wrap').removeClass('nav_up').addClass('nav_down');
         }
     }
     
@@ -140,6 +140,33 @@ $(document).ready(function(){
 		// $(".wrap").addClass("layer_open"); /* funny */
 	});
 	/* //layer pop */
+
+	/* 주문서 */
+	$(".order_accordian").on("click", function(){
+		$(this).toggleClass("hide");
+		$(this).siblings(".order_info_area").toggleClass("hide");
+	});
+
+	$(".btn_free").on("click", function(e){
+		e.preventDefault();
+
+		$(".total_price_box").addClass("show");
+	});
+
+	$(".close_floating, .content_sub").on("click", function(){
+		$(".total_price_box, .floating_layout_area").removeClass("show");
+		$(".btn_sort").removeClass("show");
+	});
+
+	$(window).on('scroll', function() {
+		if($(window).scrollTop() >= $('.footer').offset().top - 1000) {
+			$(".total_price_area").addClass("bottom");
+        } 
+		else{
+			$(".total_price_area").removeClass("bottom");
+        }
+	});
+	/* //주문서 */
 });
 
 /* funny */
