@@ -609,7 +609,8 @@ textarea.input_sub_form{width:100%; height:100px; padding:10px 0 10px 15px; line
 .total_price .text_sub_total strong{font-size:30px;}
 
 .btn_display_area{margin-top:40px;}
-.btn_display_area a{width:100%; height:50px; font-size:18px; line-height:48px;}
+.btn_display_area a,
+.btn_display_area button{width:100%; height:50px; font-size:18px; line-height:48px;}
 
 .wrap.nav_up .total_price_box{top:-120px; transition:all 0.3s;}
 
