@@ -167,6 +167,19 @@ $(document).ready(function(){
         }
 	});
 	/* //주문서 */
+
+	/* 탭 */
+	$(".tab_show li a").on("click", function(e){
+		e.preventDefault();
+
+		$(".tab_content").removeClass("on");
+		$(".tab_show li a").removeClass("on");
+
+		var link = $(this).attr("href");
+		$(link).addClass("on");
+		$(this).addClass("on");
+	});
+	/* //탭 */
 });
 
 /* funny */

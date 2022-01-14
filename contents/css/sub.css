@@ -19,7 +19,7 @@
 
 .art_img_area{width:54.68%;}
 
-.art_img_box{height:700px; background-color:#f5f5f5;}
+.art_img_box{height:700px; background-color:#f5f5f5; border:1px solid #e6e6e6;}
 
 .feat_img_box{width:100%; height:100%; overflow:hidden; position:relative;}
 
@@ -81,6 +81,7 @@
 
 .display_notice_list{margin-top:30px;}
 .display_notice_list li{font-size:18px; color:#999; line-height:30px;}
+.display_notice_list .btn_explain_pop{background-image:url("../images/icon/icon_question_gray.png"); vertical-align:2px;}
 
 .btn_display_buy{display:flex; margin-top:75px; justify-content:space-between;}
 
@@ -90,7 +91,7 @@
 .btn_default:hover{background-color:#efefef;}
 .btn_default.disabled{opacity:0.4;}
 
-.btn_active{display:inline-block; width:46%; height:60px; padding:0 40px; background-color:#000; border:2px solid #000;
+.btn_active{display:inline-block; width:46%; height:60px; background-color:#000; border:2px solid #000;
   font-size:20px; color:#fff; text-align:center; line-height:60px;
 }
 .btn_active:hover{background-color:#333;}
@@ -131,7 +132,8 @@
 
 .introduction_text_area{display:flex; margin-top:75px; padding-top:75px; border-top:2px solid #000; justify-content:space-between;}
 
-.intro_box_area{width:45.31%;}
+.intro_box_area{}
+.intro_box_area:nth-child(2){width:45.31%; margin-left:9.375%; flex-shrink:0;}
 .category_text{font-size:20px; color:#999;}
 .title_art_intro{margin-top:20px; font-size:40px; font-weight:400;}
 .title_art_intro a{color:#000; position:relative;}
@@ -416,8 +418,8 @@
 }
 
 .btn_login_area2{margin-top:100px;}
-.btn_login{display:block; height:60px; background-color:#aaa; 
-  font-size:20px; color:#f5f5f5; line-height:60px; text-align:center;
+.btn_login{display:inline-block; width:100%; height:60px; background-color:#aaa; 
+  font-size:20px; color:#f5f5f5; line-height:60px; text-align:center; cursor:pointer;
 }
 .btn_login.active{background-color:#000; color:#fff;}
 
@@ -614,6 +616,32 @@ textarea.input_sub_form{width:100%; height:100px; padding:10px 0 10px 15px; line
 .close_floating, .m_total_area, .btn_display_apply{display:none;}
 
 
+/* Find Account */
+.tab_w_2{margin-top:100px; margin-bottom:60px;}
+.tab_w_2 .tab_list2 li{width:50%;}
+
+.find_text_notice{margin-top:55px; margin-bottom:-70px;}
+.find_text_notice li{font-size:18px; color:#aaa; line-height:30px; letter-spacing:-0.04em;}
+
+.join_info_box{margin-top:60px; padding:29px 27px; border:2px solid #000;}
+.text_join_info{margin-bottom:10px; font-size:18px; color:#aaa;}
+
+.join_info_input{}
+.join_info_input li{font-size:18px; color:#000; line-height:30px;}
+
+.input_join_info{width:30%; font-size:18px; color:#000; line-height:30px; outline:none;}
+.input_join_info.w_100{width:100%;}
+
+
+.title_h3.reset_pw{margin-top:150px; text-align:center; font-weight:400;}
+.descript_reset_pw{margin-bottom:130px; font-size:20px; line-height:35px; text-align:center;}
+
+.tab_content{display:none;}
+.tab_content.on{display:block;}
+
+.tab_content .login_input_list{margin-top:0;}
+
+
 
 /* ~ 1024px ----------- */
 @media only screen 
@@ -656,7 +684,8 @@ and (max-width : 1240px)
 
 	.intro_box_area{width:100%;}
 	.intro_box_area + .intro_box_area{margin-top:55px;}
-
+	
+	.intro_box_area:nth-child(2){width:100%; margin-left:0;}
 
 	.btn_top{right:35px; bottom:35px;}
 	.btn_top.up{bottom:150px;}
@@ -687,7 +716,7 @@ and (max-width : 1240px)
 
 	/* list */
 	.sort_select_area{max-width:none;}
-	.btn_sort{right:20px;}
+	.btn_sort{right:5.33vw;}
 	.sort_select_list{right:20px;}
 
 	.list_search_area{width:40%;}
@@ -891,16 +920,19 @@ and (max-width : 767px)
 
 
 	/* list */
-	.total_sort_area{margin-bottom:70px; padding-right:0;}
+	.total_sort_area{display:block; margin-bottom:15px; padding-right:0;}
 
 	.total_art{font-size:16px;}
 
-	.sort_select_area{top:265px;}
-	.btn_sort{width:150px; height:40px; padding-right:40px; font-size:16px; text-indent:10px;}
+	.check_display_soldout{margin-top:20px;}
 
-	.sort_select_list{width:150px; top:38px;}
+	.sort_select_area{top:257px;}
+	.btn_sort{width:110px; height:30px; padding-right:20px; font-size:14px; text-indent:5px;}
+	.btn_sort:after{width:10px; height:6px; margin-top:-3px; background-size:100%; right:5px;}
 
-	.select_radio label{padding:0 10px; font-size:16px; line-height:35px;}
+	.sort_select_list{width:110px; top:28px;}
+
+	.select_radio label{padding:0 10px; font-size:14px; line-height:30px;}
 
 	.paging_area{margin-bottom:140px;}
 	.paging_num_area{margin:0 5px;}
@@ -913,10 +945,10 @@ and (max-width : 767px)
 
 	.tab_area{margin-bottom:45px;}
 
-	.tab_list2 li{width:30%;}
+	.tab_list2 li{width:50%;}
 	.tab_list2 li a{height:40px; font-size:16px; line-height:40px;}
 
-	.list_search_area{width:60%; height:30px; padding-right:35px; background-color:#eee; position:absolute; right:0; top:-50px;}
+	.list_search_area{width:100%; height:30px; padding-right:35px; background-color:#eee; position:absolute; right:0; top:-50px;}
 	.input_list_search{height:30px; padding-left:10px; font-size:14px; line-height:30px;}
 
 	.btn_list_search{width:30px; height:30px; background-size:15px;}
@@ -1110,4 +1142,24 @@ and (max-width : 767px)
 	.btn_display_area a{font-size:16px;}
 
 	.container.order .btn_top{bottom:125px;}
+
+
+	/* Find Account */
+	.tab_w_2{margin-top:60px; margin-bottom:40px;}
+
+	.find_text_notice{margin-top:40px; margin-bottom:-55px;}
+	.find_text_notice li{font-size:14px; line-height:20px;}
+
+	.join_info_box{padding:15px 16px;}
+	.text_join_info{display:none;}
+
+	.join_info_input li{margin-top:5px; font-size:14px; line-height:20px;}
+	.join_info_input li:first-child{margin-top:0;}
+
+	.input_join_info{width:40%; height:20px; font-size:14px; line-height:20px;}
+
+
+	.title_h3.reset_pw{margin-top:80px;}
+	.descript_reset_pw{margin-bottom:60px; font-size:16px; line-height:26px;}
+	.descript_reset_pw br{display:none;}
 }
