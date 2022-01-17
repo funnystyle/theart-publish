@@ -180,6 +180,17 @@ $(document).ready(function(){
 		$(this).addClass("on");
 	});
 	/* //탭 */
+
+	/* my order */
+	$(window).on('scroll', function() {
+		if($(window).scrollTop() >= $('.order_lnb_area').offset().top) {
+			$(".order_lnb_list").addClass("fixed");
+        } 
+		else{
+			$(".order_lnb_list").removeClass("fixed");
+        }
+	});
+	/* //my order */
 });
 
 /* funny */

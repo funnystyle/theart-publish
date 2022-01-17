@@ -643,6 +643,82 @@ textarea.input_sub_form{width:100%; height:100px; padding:10px 0 10px 15px; line
 .tab_content .login_input_list{margin-top:0;}
 
 
+/* my order */
+.visual_my{height:200px; background:url("../images/content/visual_bg_order.jpg") no-repeat center center; background-size:cover;
+  font-size:40px; text-align:center; line-height:200px; font-weight:500;
+}
+.visual_my span{margin-right:15px;}
+
+.contents_order{display:flex; margin-top:176px; margin-bottom:200px; padding:0 208px; justify-content:space-between;}
+
+.order_lnb_area{width:19.53%; max-width:200px;}
+.order_name{margin-bottom:60px; font-size:20px; line-height:30px;}
+
+.order_lnb_list li a{display:block; border-bottom:1px solid #ddd;
+  font-size:18px; color:#000; line-height:48px; position:relative;
+}
+.order_lnb_list li .on{border-bottom:2px solid #000;}
+.order_lnb_list li .on:after{content:""; width:7px; height:12px; margin-top:-6px; background-image:url("../images/icon/arrow_link2.png");
+  position:absolute; right:5px; top:50%;
+}
+
+.logout_link{margin-top:75px;}
+.logout_link a{font-size:18px; color:#000;}
+
+
+.contents_my_area{width:72.65%;}
+
+.title_my{padding-bottom:30px; border-bottom:2px solid #000;
+  font-size:30px; text-align:center; font-weight:400; letter-spacing:-0.025em;
+}
+.title_my_sub{margin-top:60px; margin-bottom:40px; padding-bottom:20px; border-bottom:1px solid #ddd; 
+  font-size:20px; font-weight:500;
+}
+
+.contents_my_area .tab_list2 li{width:26.88%;}
+
+.text_notice_order{margin-top:-55px; font-size:18px;}
+
+.order_tb{margin-top:20px; margin-bottom:80px; border-bottom:1px solid #ddd;}
+.order_tb thead tr th{height:50px; background-color:#000; 
+  font-size:14px; color:#fff; font-weight:500; text-align:center; line-height:16px;
+}
+.order_tb tbody tr td{padding:20px 0; font-size:14px; color:#999; text-align:center; line-height:16px;}
+.order_tb tbody tr:nth-child(even) td{background-color:#f3f3f3;}
+.order_tb tbody tr .state{color:#000;}
+.order_tb tbody tr .etc{color:#000;}
+
+.m_order_info{display:none;}
+
+.order_num{color:#555; line-height:16px; text-decoration:underline;}
+.order_date{margin:10px 0;}
+.order_detail_link{display:inline-block; margin-right:-4px; padding-right:11px; color:#000; position:relative;}
+.order_detail_link:after{content:""; width:4px; height:7px; margin-top:-3.5px; 
+  background-image:url("../images/icon/arrow_link2.png"); background-size:100%;
+  position:absolute; right:0; top:50%;
+}
+
+.order_art_area{display:flex; padding-left:2.84%; align-items:center; justify-content:space-between;}
+.order_thumb2{width:78px; height:78px; border-color:#e0e0e0;}
+
+.order_art_info3{width:67.625%; text-align:left;}
+.order_art_info3 .art_code{font-size:14px; text-align:left;}
+.order_art_info3 .artist_info{margin-top:5px; font-size:14px; line-height:18px;}
+.order_art_info3 .artist_info .artist_name{padding-right:10px; margin-right:4px;}
+.order_art_info3 .artist_info .artist_name:after{height:10px; margin-top:-5px;}
+.order_art_info3 .artist_info strong{font-weight:400;}
+
+.order_display_date{display:block; margin-top:5px;}
+
+.btn_review{display:inline-block; width:65px; height:30px; border:2px solid #000; 
+  font-size:14px; color:#000; line-height:26px; letter-spacing:-0.05em;
+}
+.btn_review.write{background-color:#000; color:#fff;}
+.btn_review.disabled{border-color:#ccc; color:#aaa;}
+
+.btn_cancel{border-bottom:1px solid #000; font-size:14px; color:#000;}
+
+
 
 /* ~ 1024px ----------- */
 @media only screen 
@@ -786,6 +862,35 @@ and (max-width : 1240px)
 	.btn_display_apply:after{content:""; width:8px; height:14px; margin-top:-7px; background-image:url("../images/icon/arrow_link.png");
 	  position:absolute; right:20px; top:50%;
 	}
+
+
+	/* my order */
+	.visual_my{margin-top:80px;}
+
+	.contents_order{display:block; margin-top:0; margin-bottom:100px; padding:0 5.33vw;}
+
+	.order_lnb_area{width:auto; max-width:none; padding-top:50px;}
+	.order_name{margin-bottom:0; line-height:80px; position:absolute; left:5.33vw; top:120px;}
+
+	.order_lnb_list{display:flex; background-color:#fff; border-top:1px solid #ddd;
+	  position:absolute; left:0; right:0; top:400px;
+	}
+	.order_lnb_list li{width:33.33%; border-left:1px solid #ddd;}
+	.order_lnb_list li:first-child{border-left:0;}
+	.order_lnb_list li a{color:#999; text-align:center;}
+	.order_lnb_list li .on{background-color:#000; border-bottom:0; color:#fff;}
+	.order_lnb_list li .on:after, .order_lnb_list li span{display:none;}
+
+	.order_lnb_list.fixed{position:fixed; left:0; right:0; top:0; z-index:3;}
+	.nav_down .order_lnb_list.fixed{top:120px; transition:all 0.3s;}
+
+	.logout_link{margin-top:0; position:absolute; right:5.33vw; top:120px;}
+	.logout_link a{color:#999; line-height:80px;}
+
+
+	.contents_my_area{width:auto; margin-top:40px;}
+
+	.order_thumb2{width:67px; height:67px;}
 }
 
 
@@ -1163,4 +1268,70 @@ and (max-width : 767px)
 	.title_h3.reset_pw{margin-top:80px;}
 	.descript_reset_pw{margin-bottom:60px; font-size:16px; line-height:26px;}
 	.descript_reset_pw br{display:none;}
+
+
+	/* my order */
+	.visual_my{height:80px; margin-top:40px; font-size:20px; line-height:80px;}
+	.visual_my span{margin-right:7px;}
+
+	.order_name{font-size:14px; line-height:40px; top:60px;}
+
+	.order_lnb_list{top:180px;}
+	.order_lnb_list li a{font-size:14px; line-height:40px;}
+
+	.nav_down .order_lnb_list.fixed{top:60px;}
+
+	.logout_link{top:60px;}
+	.logout_link a{font-size:14px; line-height:40px;}
+
+
+	.title_my{display:none;}
+	.title_my_sub{display:none;}
+
+	.contents_my_area .tab_list2 li{width:50%;}
+
+	.text_notice_order{display:none;}
+
+	.order_tb{margin-top:0; margin-bottom:80px; border-bottom:0;}
+	.order_tb colgroup{display:none;}
+	.order_tb thead, 
+	.order_tb thead tr{display:block;}
+	.order_tb thead tr th{display:none;}
+	.order_tb tbody{display:block;}
+	.order_tb tbody tr{display:flex; padding:30px 0; border-bottom:1px solid #ddd; flex-wrap:wrap; align-items:center;}
+	.order_tb tbody tr:first-child{padding-top:0;}
+	.order_tb tbody tr td{display:block; padding:0; font-size:14px; text-align:left;}
+	.order_tb tbody tr:nth-child(even) td{background-color:#fff;} 
+	.order_tb tbody tr .state{width:100%; margin-bottom:10px; font-weight:700;}
+	.order_tb tbody tr .order_num_td,
+	.order_tb tbody tr .d_date_td,
+	.order_tb tbody tr .return_date_td{display:none;}
+	.order_tb tbody tr .etc{display:none;}
+
+	.order_tb tbody tr .order_art_td{width:83.71%; flex-grow:1;}
+	.order_tb tbody tr .btn_review_td{width:45px; text-align:center; flex-shrink:0;}
+
+	.m_order_info{display:block; margin-bottom:5px;}
+
+	.order_num{display:inline-block; font-size:11px; color:#999; line-height:normal; text-decoration:underline;}
+	.order_date{display:inline-block; margin:0; font-size:11px; color:#999;}
+	.order_detail_link{display:none;}
+
+	.order_art_area{display:flex; padding-left:0; justify-content:flex-start;}
+	.order_thumb2{width:63px; height:63px; flex-shrink:0;}
+
+	.order_art_info3{width:70.625%; margin-left:8px; padding-right:5%;}
+	.order_art_info3 .art_code{display:none;}
+	.order_art_info3 .artist_info{margin-top:0; font-size:12px; line-height:16px;}
+	.order_art_info3 .artist_info .artist_name{padding-right:10px; margin-right:4px;}
+	.order_art_info3 .artist_info .artist_name:after{height:10px; margin-top:-5px;}
+	.order_art_info3 .artist_info strong{font-weight:400;}
+
+	.order_display_date{display:block; margin-top:5px;}
+
+	.btn_review{display:block; width:auto; height:auto; padding:5px;
+	  font-size:12px; line-height:14px; letter-spacing:0; text-align:center;
+	}
+
+	.btn_cancel{font-size:12px;}
 }
