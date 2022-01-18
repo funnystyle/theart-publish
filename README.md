@@ -12,6 +12,7 @@ The Art Gallery Publish Files
 |메인|[01_Main.html](01_main.html)|2021-12-21|
 |작품 목록|[02-01_Exhibition_list.html](02-01_Exhibition_list.html)|2021-12-29|
 |작품 상세|[02-02_Exhibition_detail.html](02-02_Exhibition_detail.html)|2021-12-29|
+|작가|[03-01_Artists.html](03-01_Artists.html)|2022-01-18|
 |주문서 정보 입력|[04-01_Order_form.html](04-01_Order_form.html)|2022-01-11|
 |로그인|[05-01_Account_Login.html](05-01_Account_Login.html)|2022-01-04|
 |비밀번호 찾기|[05-02-01_FindAccount.html](05-02-01_FindAccount.html)|2022-01-14|
