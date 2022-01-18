@@ -118,7 +118,11 @@ body.open .gnb_layout{left:0; transition:all 0.3s;}
 .art_info{margin-top:15px; font-size:20px; color:#999;}
  
 .art_display{margin-top:7px;font-size:20px; color:#19b3b8;}
+.art_display .label{display:inline-block; height:21px; padding:0 8px; margin-right:6px; background-color:#19b3b8;
+  font-size:16px; color:#fff; line-height:21px; vertical-align:1px;
+}
 .art_display.no{color:#ff7448;}
+.art_display.no .label{background-color:#ff7448;}
 
 
 /* footer */
@@ -198,6 +202,8 @@ and (max-width : 767px)
 	.artist_info{font-size:22px;}
 	.art_info{margin-top:10px; font-size:16px;}	 
 	.art_display{margin-top:5px; font-size:16px;}
+	.art_display .label{height:15px; padding:0 5px; margin-right:3px; font-size:12px; line-height:15px;}
+
 
 
 	/* footer */

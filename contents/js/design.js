@@ -183,7 +183,7 @@ $(document).ready(function(){
 
 	/* my order */
 	$(window).on('scroll', function() {
-		if($(window).scrollTop() >= $('.order_lnb_area').offset().top) {
+		if($(window).scrollTop() >= $('.order_lnb_list').offset().top) {
 			$(".order_lnb_list").addClass("fixed");
         } 
 		else{
@@ -191,6 +191,19 @@ $(document).ready(function(){
         }
 	});
 	/* //my order */
+
+	/* 작가 detail */
+	$(".layer_pop_area.artist").on('scroll', function() {
+		if($(this).scrollTop() > $('.order_lnb_list').offset().top) {
+			$(".order_lnb_list").addClass("fixed");
+			console.log("1");
+        } 
+		else{
+			$(".order_lnb_list").removeClass("fixed");
+			console.log("2");
+        }
+	});
+	/* //작가 detail */
 });
 
 /* funny */
