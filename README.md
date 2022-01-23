@@ -1,7 +1,7 @@
 # theart-publish
 The Art Gallery Publish Files
 
-최종 반영 날짜 : 2022-01-11
+최종 반영 날짜 : 2022-01-23
 
 |화면|링크|최초날짜|
 |---|---|---|
@@ -14,9 +14,15 @@ The Art Gallery Publish Files
 |작품 상세|[02-02_Exhibition_detail.html](02-02_Exhibition_detail.html)|2021-12-29|
 |작가|[03-01_Artists.html](03-01_Artists.html)|2022-01-18|
 |주문서 정보 입력|[04-01_Order_form.html](04-01_Order_form.html)|2022-01-11|
+|주문 완료|[04-03_Order_complete.html](04-03_Order_complete.html)|2022-01-23|
 |로그인|[05-01_Account_Login.html](05-01_Account_Login.html)|2022-01-04|
 |비밀번호 찾기|[05-02-01_FindAccount.html](05-02-01_FindAccount.html)|2022-01-14|
 |회원가입|[05-03_Account_SignUp.html](05-03_Account_SignUp.html)|2022-01-04|
 |이용약관 내용보기|[05-04_Account_ViewTerms.html](05-04_Account_ViewTerms.html)|2022-01-04|
 |회원가입 완료|[05-07_Account_SignUp_complete.html](05-07_Account_SignUp_complete.html)|2022-01-04|
 |주문 목록 (진행 목록)|[06-01_myorders(진행작품내역).html](06-01_myorders(진행작품내역).html)|2022-01-11|
+|리뷰 쓰기(LP)|[06-01-01_review_write_LP.html](06-01-01_review_write_LP.html)|2022-01-23|
+|리뷰 보기(LP)|[06-01-02_review_view_LP.html](06-01-02_review_view_LP.html)|2022-01-23|
+|1:1 문의 목록|[06-03-01_qna_list.html](06-03-01_qna_list.html)|2022-01-23|
+|1:1 문의 보기|[06-03-02_qna_view.html](06-03-02_qna_view.html)|2022-01-23|
+|1:1 문의 쓰기|[06-03-03_qna_write.html](06-03-03_qna_write.html)|2022-01-23|

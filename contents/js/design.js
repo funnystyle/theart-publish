@@ -122,7 +122,7 @@ $(document).ready(function(){
 	/* //sort select */
 
 	/* layer pop */
-	$(".close_layer, .layer_bg, .close_layer_review").on("click", function(e){
+	$(".close_layer, .layer_bg, .close_layer_review, .btn_active.list").on("click", function(e){
 		e.preventDefault();
 
 		$(".layer_pop_area").removeClass("open");
@@ -194,15 +194,24 @@ $(document).ready(function(){
 
 	/* 작가 detail */
 	$(".layer_pop_area.artist").on('scroll', function() {
-		if($(this).scrollTop() > $('.order_lnb_list').offset().top) {
+		if($(this).scrollTop() > $('.order_lnb_list').offset().top + 50) {
 			$(".order_lnb_list").addClass("fixed");
-			console.log("1");
         } 
 		else{
 			$(".order_lnb_list").removeClass("fixed");
-			console.log("2");
         }
 	});
+
+	$(window).resize(function () {
+		setTimeout(function () {
+			if($(window).outerHeight() < 876){
+				$(".layer_pop_area.artist").addClass("top");
+			}
+			else{
+				$(".layer_pop_area.artist").removeClass("top");
+			}
+		},50);
+	}).resize();
 	/* //작가 detail */
 });
 

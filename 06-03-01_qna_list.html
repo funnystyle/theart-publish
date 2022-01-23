@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>THE ART</title>
+
+<link href="https://unpkg.com/swiper/swiper-bundle.css" type="text/css" rel="stylesheet">
+<link href="contents/css/reset.css" type="text/css" rel="stylesheet">
+<link href="contents/css/layout.css" type="text/css" rel="stylesheet">
+<link href="contents/css/main.css" type="text/css" rel="stylesheet">
+<link href="contents/css/sub.css" type="text/css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="contents/js/jquery.ui.touch-punch.js"></script>
+<script src="contents/js/design.js" type="text/javascript"></script>
+
+</head>
+
+
+<body>
+	
+	<div class="wrap">
+
+		<!-- header -->
+		<header class="header">
+			<div class="cont_center">
+				<h1 class="logo"><a href="#"><img src="contents/images/header/logo.png" alt="THE ART"></a></h1>
+
+				<button type="button" class="btn_gnb"><span>메뉴 열기</span></button>
+				
+				<!-- gnb -->
+				<div class="gnb_area">
+					<p class="gnb_bg"></p>
+
+					<div class="gnb_layout">
+						<ul class="join_link_list">
+							<li><a href="#">Exhibition</a></li>
+							<li><a href="#">Artist</a></li>
+						</ul>
+
+						<ul class="gnb_list">
+							<li><a href="#">About THE ART</a></li>
+							<li><a href="#">공간 시뮬레이션</a></li>
+							<li><a href="#">작가 신청하기</a></li>
+							<li><a href="#">문의하기</a></li>
+						</ul>
+
+						<!-- 로그인 안했을 경우 -->
+						<div class="btn_login_area">
+							<a href="#" class="btn_action">로그인</a>
+
+							<p class="log_inout_link">
+								처음이신가요? <a href="#">디아트 가입하기</a>
+							</p>
+						</div>
+						<!-- //로그인 안했을 경우 -->
+
+						<!-- 로그인 했을 경우 -->
+						<div class="btn_login_area" style="display:none;">
+							<a href="#" class="user_link">갤러리스트 <strong>이정훈</strong> 님</a>
+
+							<p class="log_inout_link">
+								<a href="#">로그아웃</a>
+							</p>
+						</div>
+						<!-- //로그인 했을 경우 -->
+					</div>
+				</div>
+				<!-- //gnb -->
+
+				<a href="#" class="btn_mypage">마이페이지</a>
+
+				<a href="#" class="btn_search">검색</a>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div class="container">
+			<div class="visual_my">
+				<span>이정훈</span> Gallery
+			</div>
+
+			<div class="cont_center contents_order">
+				<!-- lnb -->
+				<div class="order_lnb_area">
+					<p class="order_name">갤러리스트 <strong>이정훈</strong> 님 안녕하세요.</p>
+
+					<ul class="order_lnb_list">
+						<li><a href="#">주문 내역</a></li>
+						<li><a href="#" class="on">1:1 문의</a></li>
+						<li><a href="#"><span>마이 </span>갤러리 정보</a></li>
+					</ul>
+
+					<p class="logout_link"><a href="#">로그아웃</a></p>
+				</div>
+				<!-- //lnb -->
+
+				<!-- contents -->
+				<div class="contents_my_area">
+					<h2 class="title_my">1:1 문의</h2>
+
+					<h3 class="title_my_sub show">1:1 문의 목록</h3>
+
+					<table class="order_tb qna">
+						<colgroup>
+							<col style="width:8.46%;">
+							<col style="width:7.25%;">
+							<col>
+							<col style="width:12.36%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>상태</th>
+								<th>제목</th>
+								<th>등록일</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="order_num_td">103</td>
+								<td class="answer_state_td"><strong>답변대기</strong></td>
+								<td class="title_td"><a href="#">제목입니다. 엄청 긴 작품제목이 있을수도 있겠지요, 정해진 사이즈를 넘어제목입니다. 엄청 긴 작품제목이 있을수도 있겠지요, 정해진 사이즈를 넘어제목입니다. 엄청 긴 작품제목이 있을수도 있겠지요, 정해진 사이즈를 넘어</a></td>
+								<td class="d_date_td2">22.01.09</td>
+							</tr>
+							<tr>
+								<td class="order_num_td">103</td>
+								<td class="answer_state_td"><strong class="complete">답변완료</strong></td>
+								<td class="title_td"><a href="#">제목입니다.</a></td>
+								<td class="d_date_td2">22.01.09</td>
+							</tr>
+						</tbody>
+
+						<tbody style="display:none;">
+							<tr>
+								<td colspan="4" class="no_data">문의 글이 없습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="btn_paging_area">
+						<div class="btn_qna_area">
+							<a href="#" class="btn_action">문의하기</a>
+						</div>
+
+						<!-- paging -->
+						<div class="paging_area">
+							<a href="#" class="btn_paging first disabled">처음</a>
+							<a href="#" class="btn_paging prev">이전</a>
+
+							<div class="paging_num_area">
+								<a href="#" class="on">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<span class="short_word">...</span>
+								<a href="#">100</a>
+							</div>
+
+							<a href="#" class="btn_paging next">다음</a>
+							<a href="#" class="btn_paging last">마지막</a>
+						</div>
+						<!-- //paging -->
+					</div>
+				</div>
+				<!-- //contents -->
+			</div>
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="cont_center">
+				<ul class="f_menu">
+					<li class="m_none"><a href="#">About The Art</a></li>
+					<li class="m_none"><a href="#">작가 지원하기</a></li>
+					<li class="m_none"><a href="#">문의하기</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+				</ul>
+
+				<ul class="f_sns_list">
+					<li><a href="#" class="insta">인스타그램</a></li>
+					<li><a href="#" class="youtube">유투브</a></li>
+					<li><a href="#" class="kakao">카카오톡</a></li>
+				</ul>
+
+				<p class="f_logo"><img src="contents/images/footer/f_logo.png" alt="THE ART"></p>
+
+				<div class="f_info_area">
+					주식회사 제이에이치앤코퍼레이션
+
+					<span>대표이사 : 이정훈</span>
+
+					<span>대표전화 : 070-1234-5678  평일 10:00 - 16:00</span>
+
+					<br class="m_none">
+
+					<span>E-mail: theartgallery@theartgallery.co.kr</span>
+
+					<address>주소 : 서울특별시 종로구 통일로18길 9, 105동 8층 3호</address>
+
+					<br class="m_none">
+
+					<span>사업자등록번호 : 709-88-02103</span>
+
+					<span>통신판매신고번호 : 2021-서울종로-1544</span>
+
+					<a href="#">사업자정보확인 &gt;</a>
+				</div>
+
+				<p class="copyright">© THE ART GALLERY , JHN Corp.   All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!-- //footer -->
+
+	</div>
+
+	<script type="text/javascript">
+		$(window).load( function(){
+			// feat image 
+			$('.feat_img > img').each(function (index, item) {
+				if ($(this).width() / $(this).height() < $(this).height() / $(this).width()  ) {
+					$(this).addClass('landscape').removeClass('portrait');
+				} else {
+					$(this).addClass('portrait').removeClass('landscape');
+				}
+			});
+		});
+	</script>
+
+</body>
+</html>
