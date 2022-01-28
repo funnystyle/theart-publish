@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>THE ART</title>
+
+<link href="https://unpkg.com/swiper/swiper-bundle.css" type="text/css" rel="stylesheet">
+<link href="contents/css/reset.css" type="text/css" rel="stylesheet">
+<link href="contents/css/layout.css" type="text/css" rel="stylesheet">
+<link href="contents/css/main.css" type="text/css" rel="stylesheet">
+<link href="contents/css/sub.css" type="text/css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+<script src="contents/js/jquery.ui.touch-punch.js"></script>
+<script src="contents/js/design.js" type="text/javascript"></script>
+
+</head>
+
+
+<body>
+	
+	<div class="wrap">
+
+		<!-- header -->
+		<header class="header">
+			<div class="cont_center">
+				<h1 class="logo"><a href="#"><img src="contents/images/header/logo.png" alt="THE ART"></a></h1>
+
+				<button type="button" class="btn_gnb"><span>메뉴 열기</span></button>
+				
+				<!-- gnb -->
+				<div class="gnb_area">
+					<p class="gnb_bg"></p>
+
+					<div class="gnb_layout">
+						<ul class="join_link_list">
+							<li><a href="#">Exhibition</a></li>
+							<li><a href="#">Artist</a></li>
+						</ul>
+
+						<ul class="gnb_list">
+							<li><a href="#">About THE ART</a></li>
+							<li><a href="#">공간 시뮬레이션</a></li>
+							<li><a href="#">작가 신청하기</a></li>
+							<li><a href="#">문의하기</a></li>
+						</ul>
+
+						<!-- 로그인 안했을 경우 -->
+						<div class="btn_login_area">
+							<a href="#" class="btn_action">로그인</a>
+
+							<p class="log_inout_link">
+								처음이신가요? <a href="#">디아트 가입하기</a>
+							</p>
+						</div>
+						<!-- //로그인 안했을 경우 -->
+
+						<!-- 로그인 했을 경우 -->
+						<div class="btn_login_area" style="display:none;">
+							<a href="#" class="user_link">갤러리스트 <strong>이정훈</strong> 님</a>
+
+							<p class="log_inout_link">
+								<a href="#">로그아웃</a>
+							</p>
+						</div>
+						<!-- //로그인 했을 경우 -->
+					</div>
+				</div>
+				<!-- //gnb -->
+
+				<a href="#" class="btn_mypage">마이페이지</a>
+
+				<a href="#" class="btn_search">검색</a>
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- container -->
+		<div class="container">
+			
+			<div class="cont_center about_text_area">
+				<div class="about_text1">
+					당신이 있는 곳을 갤러리로
+
+					<strong>
+						미술품 무료 전시서비스, <br>디아트갤러리
+					</strong>
+				</div>
+
+				<div class="about_text2">
+					디아트갤러리는<br>
+					세상의 모든 공간을 갤러리로 만드는 꿈을 꿉니다.<br><br>
+
+					누구나, 쉽게 미술품을 감상할 수 있도록<br>
+					문턱을 아예 없애겠습니다.<br><br>
+
+					역량 있는 신진작가를 발굴 ·육성하여<br>
+					미술시장 저변을 확대하겠습니다.
+				</div>
+			</div>
+
+			<div class="about_art_img1">
+				<img src="contents/images/content/about_art_img1.jpg" alt="">
+			</div>
+
+			<ul class="clear cont_center about_text_list">
+				<li>
+					<strong>더 쉽고 편하게 <br>미술품을 감상하세요.</strong>
+
+					미술작품에 관심이 있지만 갤러리를 <br>
+					방문할 시간이 없는 분들을 위해, <br>
+					공간을 더 아름답게 꾸미고 싶은 분들을 <br>
+					위해 미술품을 무료로 빌려 드립니다.
+				</li>
+				<li>
+					<strong>직접 갤러리 운영자가 <br>되어보세요.</strong>
+
+					당신이 원하는 공간에 미술품을 <br>
+					전시하고, 감상하세요. <br>
+					작품이 판매되면 전시에 대한 대가로 <br>
+					수수료를 얻습니다.
+				</li>
+				<li>
+					<strong>신진작가의 성장을 <br>지원해 주세요.</strong>
+
+					참신하고 실력 있는 신진작가의 원화 <br>
+					작품을 전시하고 주변에 소개해주세요. <br>
+					작품 판매를 통해 역량 있는 작가들의 <br>
+					예술활동에 더욱 큰 힘이 됩니다.
+				</li>
+			</ul>
+
+			<div class="cont_center theart_use_area">
+				<div class="about_text1">
+					<strong>디아트갤러리,<br>이렇게 이용하세요.</strong>
+				</div>
+
+				<ol class="theart_text_list">
+					<li><span>1</span> 갤러리스트 회원가입, 전시 가능 작품 중 전시 요청</li>
+					<li><span>2</span> 거실이나 침실 등 원하는 공간에 작품 설치 후 감상</li>
+					<li><span>3</span> 설치 후 작품 느낌이나 감상평 업로드</li>
+					<li><span>4</span> 전시 중에 작품 판매 작품가의 20% 수수료 지급 <br>(직접 구매 가능)</li>
+				</ol>
+			</div>
+
+			<div class="faq_area">
+				<div class="cont_center">
+					<ul class="faq_list">
+						<li>
+							<span>Q.</span>
+							<strong class="title_faq">작품 전시는 무료인가요?</strong>
+
+							<div class="text_faq">
+								디아트갤러리는 누구나, 쉽게 미술 작품을 감상할 수 있도록 미술품을 무료로 대여합니다.<br>
+								다만 , 디아트갤러리 담당자가 직접 배송 ·설치해드리기 때문에, 출장설치비만 지불하시면 됩니다.<br>
+								* 출장설치비 44,000원 (수도권 일부지역, 못 설치 기준)
+							</div>
+						</li>
+						<li>
+							<span>Q.</span>
+							<strong class="title_faq">작품 무료 전시 기간이 궁금합니다.</strong>
+
+							<div class="text_faq">
+								기본 전시기간은 3개월입니다. 전시 중 판매되더라도 기본 전시기간은 보장해드립니다.<br>
+								만약 전시기간 중 작품이 판매되지 않으면, 무료로 전시 기간을 연장하거나, 새로운 작품으로 전시 신청하실 수 있습니다.<br>
+								(단, 새로운 작품의 경우 출장 설치비가 소요됩니다.)
+							</div>
+						</li>
+						<li>
+							<span>Q.</span>
+							<strong class="title_faq">작품은 진품인가요?</strong>
+
+							<div class="text_faq">
+								신진 작가의 진품임을 디아트갤러리가 보증합니다.<br>
+								판매 완료 후에도 해당 작품은 지속적으로 트래킹하여 보증해 드립니다.
+							</div>
+						</li>
+						<li>
+							<span>Q.</span>
+							<strong class="title_faq">전시중 작품의 손상이나 훼손되는 경우는 어떻게 하나요?</strong>
+
+							<div class="text_faq">
+								갤러리스트로서 미술품의 보존관리를 위해 기본적인 관리에 신경써주세요.<br>
+								직사광선을 피하고 온도는 18~25ºC, 습도는 45~55%를 유지하도록 노력해주세요.<br>
+								전시 중 작품에 문제가 생기거나, 기존 설치장소에서 다른 장소로 이동 설치할 때에도 디아트갤러리와 협의하셔야 합니다.<br>
+								보다 자세한 내용은 작품 설치 때 설명드리며, 기타사항은 약관을 참고하세요.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<!-- //container -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="cont_center">
+				<ul class="f_menu">
+					<li class="m_none"><a href="#">About The Art</a></li>
+					<li class="m_none"><a href="#">작가 지원하기</a></li>
+					<li class="m_none"><a href="#">문의하기</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+				</ul>
+
+				<ul class="f_sns_list">
+					<li><a href="#" class="insta">인스타그램</a></li>
+					<li><a href="#" class="youtube">유투브</a></li>
+					<li><a href="#" class="kakao">카카오톡</a></li>
+				</ul>
+
+				<p class="f_logo"><img src="contents/images/footer/f_logo.png" alt="THE ART"></p>
+
+				<div class="f_info_area">
+					주식회사 제이에이치앤코퍼레이션
+
+					<span>대표이사 : 이정훈</span>
+
+					<span>대표전화 : 070-1234-5678  평일 10:00 - 16:00</span>
+
+					<br class="m_none">
+
+					<span>E-mail: theartgallery@theartgallery.co.kr</span>
+
+					<address>주소 : 서울특별시 종로구 통일로18길 9, 105동 8층 3호</address>
+
+					<br class="m_none">
+
+					<span>사업자등록번호 : 709-88-02103</span>
+
+					<span>통신판매신고번호 : 2021-서울종로-1544</span>
+
+					<a href="#">사업자정보확인 &gt;</a>
+				</div>
+
+				<p class="copyright">© THE ART GALLERY , JHN Corp.   All Rights Reserved.</p>
+			</div>
+		</footer>
+		<!-- //footer -->
+
+		<!-- 레이어팝업 -->
+		<div class="layer_pop_area artist">
+			<p class="layer_bg"></p>
+
+			<div class="layer_layout_artist">
+				<button class="close_layer">레이어팝업 닫기</button>
+
+				<div class="layer_container">
+					<!-- 작가 정보 영역 -->
+					<div class="artist_info_area">
+						<!-- 작가 사진 -->
+						<div class="artist_profile_img">
+							<img src="contents/images/content/artist_profile_img.jpg" alt="">
+						</div>
+						<!-- //작가 사진 -->
+
+						<p class="artist_name3">
+							<strong>조광익</strong>
+
+							Jo Gwang-ik
+						</p>
+
+						<ul class="academic_record_list">
+							<li>홍익대학교 서양학과 학사</li>
+							<li>홍익대학교 서양학과 학사</li>
+							<li>Academy of Art University, San Francisco 서양화 학사</li>
+							<li>Academy of Art University, San Francisco 서양화 학사</li>
+						</ul>
+
+						<ul class="order_lnb_list tab_show">
+							<li><a href="#art" class="on">작품</a></li>
+							<li><a href="#activity">활동이력</a></li>
+							<li><a href="#interview">작가소개</a></li>
+						</ul>
+					</div>
+					<!-- //작가 정보 영역 -->
+					
+					<!-- 작품 -->
+					<div class="tab_content artist on" id="art">
+						<!-- 작품 슬라이드 -->
+						<div class="swiper artist_art">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="feat_img_box">
+										<div class="feat_img">
+											<a href="#"><img src="contents/images/content/artist_art_img.jpg" alt=""></a>
+										</div>
+									</div>
+
+									<div class="art_name_area">
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p>
+
+										<h3 class="title_art_name">
+											<span>가을아침 햇살이 가득한 날에 당신과 함께 커피를 한 잔 마시던 날</span>
+										</h3>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="feat_img_box">
+										<div class="feat_img">
+											<a href="#"><img src="contents/images/content/artist_art_img.jpg" alt=""></a>
+										</div>
+									</div>
+
+									<div class="art_name_area">
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p> 
+
+										<h3 class="title_art_name">
+											<span>가을아침 햇살이</span>
+										</h3>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="feat_img_box">
+										<div class="feat_img">
+											<a href="#"><img src="contents/images/content/artist_art_img.jpg" alt=""></a>
+										</div>
+									</div>
+
+									<div class="art_name_area">
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p>
+
+										<h3 class="title_art_name">
+											<span>가을아침 햇살이 가득한 날에 당신과 함께 커피를 한 잔 마시던  </span>
+										</h3>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="feat_img_box">
+										<div class="feat_img">
+											<a href="#"><img src="contents/images/content/artist_art_img.jpg" alt=""></a>
+										</div>
+									</div>
+
+									<div class="art_name_area">
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p>
+
+										<h3 class="title_art_name">
+											<span>가을아침 햇살이</span>
+										</h3>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="feat_img_box">
+										<div class="feat_img">
+											<a href="#"><img src="contents/images/content/artist_art_img.jpg" alt=""></a>
+										</div>
+									</div>
+
+									<div class="art_name_area">
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p>
+
+										<h3 class="title_art_name">
+											<span>가을아침 햇살이 가득한 날에 당신과 함께 커피를 한 잔 마시던 날 </span>
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //작품 슬라이드 -->
+
+						<p class="art_copyright">작품의 무단 도용 및 재배포를 엄격히 금지합니다. Copyright © 조광익 All rights reserved.</p>
+
+						<div class="total_sort_area">
+							<p class="total_art">총 <strong>100,024</strong> 작품</p>
+
+							<div class="check_display_soldout">
+								<span class="d_check">
+									<input type="checkbox" id="display">
+									<label for="display">전시 중</label>
+								</span>
+
+								<span class="d_check">
+									<input type="checkbox" id="soldout">
+									<label for="soldout">판매완료</label>
+								</span>
+							</div>
+						</div>
+
+						<!-- 썸네일 슬라이드 -->
+						<div class="artist_thumb_area">
+							<div class="swiper artist_art_thumb">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="art_thumb">
+											<img src="contents/images/content/artist_art_img.jpg" alt="">
+										</div>
+
+										<h3 class="title_art_name">가을아침 햇살이 가득한 날에 당신과 함께 커피를 한 잔 마시던 날 </h3>
+
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="no_thumb">
+											<img src="contents/images/content/no_thumb.jpg" alt="">
+										</div>
+
+										<h3 class="title_art_name">바다나무가 있는 외딴 섬</h3>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="no_thumb">
+											<img src="contents/images/content/no_thumb.jpg" alt="">
+										</div>
+
+										<h3 class="title_art_name">바다나무가 있는 외딴 섬</h3>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="no_thumb">
+											<img src="contents/images/content/no_thumb.jpg" alt="">
+										</div>
+
+										<h3 class="title_art_name">바다나무가 있는 외딴 섬</h3>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="art_thumb">
+											<img src="contents/images/content/artist_art_img.jpg" alt="">
+										</div>
+
+										<h3 class="title_art_name">가을아침 햇살이 가득한 날에 당신과 함께 커피를 한 잔 마시던 날 </h3>
+
+										<p class="art_display">
+											<span class="label">전시중</span>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="slide_next"></div>
+							<div class="slide_prev"></div>
+						</div>
+						<!-- //썸네일 슬라이드 -->
+
+						<div class="btn_collect">
+							<a href="#">작가 작품 모아보기</a>
+						</div>
+					</div>
+					<!-- //작품 -->
+
+					<!-- 활동이력 -->
+					<div class="tab_content artist" id="activity">
+						<h3 class="title_layer_artist">Biography</h3>
+
+						<div class="activity_history_area">
+							<!-- 개인전 -->
+							<div class="artist_column">
+								<h4 class="title_activity"><span>Solo Exhibitions</span> 개인전</h4>
+
+								<!-- 활동이력 목록 -->
+								<div class="activity_history">
+									<ul class="activity_history_list">
+										<li>
+											<strong>2020</strong>
+
+											<ul class="activity_history_sub">
+												<li>34회 강정희전 -갤러리 서울 아산병원 초대전 (서울아산병원 (동관 갤러리))</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2019</strong>
+
+											<ul class="activity_history_sub">
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2018</strong>
+
+											<ul class="activity_history_sub">
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2020</strong>
+
+											<ul class="activity_history_sub">
+												<li>34회 강정희전 -갤러리 서울 아산병원 초대전 (서울아산병원 (동관 갤러리))</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2019</strong>
+
+											<ul class="activity_history_sub">
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2018</strong>
+
+											<ul class="activity_history_sub">
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- //활동이력 목록 -->
+							</div>
+							<!-- //개인전 -->
+							
+							<!-- 단체전 -->
+							<div class="artist_column">
+								<h4 class="title_activity"><span>Gruop Exhibitions</span> 단체전</h4>
+
+								<!-- 활동이력 목록 -->
+								<div class="activity_history">
+									<ul class="activity_history_list">
+										<li>
+											<strong>2020</strong>
+
+											<ul class="activity_history_sub">
+												<li>34회 강정희전 -갤러리 서울 아산병원 초대전 (서울아산병원 (동관 갤러리))</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2019</strong>
+
+											<ul class="activity_history_sub">
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+												<li>30회 강정희전 (울산남부도서관갤러리)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2018</strong>
+
+											<ul class="activity_history_sub">
+												<li>33회 강정희전 -김해 한림박물관 겨울 기획전  (김해 한림박물관)</li>
+												<li>32회 강정희전 (가다갤러리)</li>
+												<li>31회 강정희전 (선바위갤러리)</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- //활동이력 목록 -->
+							</div>
+							<!-- //단체전 -->
+
+							<!-- 수상/선정 -->
+							<div class="artist_column">
+								<h4 class="title_activity"><span>Awards</span> 수상/선정</h4>
+
+								<!-- 활동이력 목록 -->
+								<div class="activity_history">
+									<ul class="activity_history_list">
+										<li>
+											<strong>2020</strong>
+
+											<ul class="activity_history_sub">
+												<li>울산미술협회 올해의 작가상(울산문화예술회관)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>2019</strong>
+
+											<ul class="activity_history_sub">
+												<li>울산예총회장공로상(울산문화예술회관)</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<!-- //활동이력 목록 -->
+							</div>
+							<!-- //수상/선정 -->
+						</div>
+					</div>
+					<!-- //활동이력 -->
+
+					<!-- 작가 소개 -->
+					<div class="tab_content artist" id="interview">
+						<h3 class="title_layer_artist">Interview</h3>
+
+						<div class="activity_history_area">
+							<!-- 작가로부터 -->
+							<div class="artist_column">
+								<h4 class="title_activity"><span>From The Artist</span> 작가로부터</h4>
+
+								<div class="text_artist_area">
+									나의 익숙한 공간에서 식물을 보고 있으면, 미풍도 불지 않은 고요한 숲속에 자리한 식물들과 나의 호흡만이 오롯이 공간을 채우고 있는 것 같다. 편안함과 친밀함이 흐르는 가운데 어느덧 마음속에 가득 차올랐던 잡다한 감정들이 내려앉는다. 실내공간과 그 공간 속에 자리 잡고 있는 식물, 가구, 소품 등이 나의 내면과 공유하면서 그 협소한 공간의 다양한 변주가 곧 나의 회화의 기조를 이룬다. 나는 요 몇 년간 병상 중에, 육체와 심신이 나약해진 가운데 제한된 공간 안에서 삶의 의욕, 희망, 일상의 소소한 기쁨에 대하여 생각하는 시간을 종종 가졌다. <br>
+									이런 변화된 내면을 정물 특히 생동하는 식물에 감정이입하여 삶의 즐거움, 사랑, 행복, 치유를 표현하였다.
+								</div>
+							</div>
+							<!-- //작가로부터 -->
+							
+							<!-- 언론속의 작가 -->
+							<div class="artist_column">
+								<h4 class="title_activity"><span>In The Article</span> 언론속의 작가</h4>
+
+								<div class="text_artist_area">
+									"예술은 우리 삶에 공존한다고 믿어요. 제그림을 보시고 어떤 영감과 에너지를 얻었으면 합니다. 공감을 주는 그림보다는 사람의 관점 위주가 우선이 되는 그런 작품으로 전시를 했습니다."<br><br>
+									우주의 한복판에 있는 듯한 어둠을 배경으로 흰 새 두마리가 역동적으로 날갯짓한다.
+
+									<div class="btn_read_more">
+										<a href="#">Read More</a>
+									</div>
+								</div>
+							</div>
+							<!-- //언론속의 작가 -->
+						</div>
+					</div>
+					<!-- //작가 소개 -->
+				</div>
+			</div>
+		</div>
+		<!-- //레이어팝업 -->
+
+	</div>
+
+	<script type="text/javascript">
+		$(window).load( function(){
+			// feat image 
+			$('.feat_img > img').each(function (index, item) {
+				if ($(this).width() / $(this).height() < $(this).height() / $(this).width()  ) {
+					$(this).addClass('landscape').removeClass('portrait');
+				} else {
+					$(this).addClass('portrait').removeClass('landscape');
+				}
+			});
+
+			var artist_art_thumb = new Swiper(".artist_art_thumb", {
+				loop: true,
+				spaceBetween: 20,
+				slidesPerView: 4,
+				slidesPerGroup: 4,
+				navigation: {
+					nextEl: ".slide_next",
+					prevEl: ".slide_prev",
+				},
+				watchSlidesProgress: true,
+				breakpoints: {
+					320: {
+						slidesPerView: 3,
+						spaceBetween: 15,
+						slidesPerGroup: 3,
+					},
+					768: {
+						spaceBetween: 20,
+						slidesPerView: 4,
+						slidesPerGroup: 4,
+					}
+				},
+			});
+
+			var artist_art = new Swiper(".artist_art", {
+				loop: true,
+				spaceBetween: 10,
+
+				thumbs: {
+					swiper: artist_art_thumb,
+				},
+			});
+
+			$(".artist_list li a").on("click", function(e){
+				e.preventDefault();
+
+				$(".layer_pop_area").addClass("open");
+			});
+		});
+	</script>
+
+</body>
+</html>
