@@ -1,7 +1,7 @@
 # theart-publish
 The Art Gallery Publish Files
 
-최종 반영 날짜 : 2022-01-24
+최종 반영 날짜 : 2022-01-28
 
 |화면|링크|최초날짜|
 |---|---|---|
