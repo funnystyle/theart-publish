@@ -19,3 +19,4 @@ The Art Gallery Publish Files
 |1:1 문의 쓰기|[06-03-03_qna_write.html](06-03-03_qna_write.html)|2022-01-23||비밀번호 재인증|[06-04_my_auth.html](06-04_my_auth.html)|2022-01-25|
 |회원 탈퇴|[06-06-01_withdraw.html](06-06-01_withdraw.html)|2022-01-25||내정보 변경|[06-05_my_edit.html](06-05_my_edit.html)|2022-01-25|
 |About|[07-01_About.html](07-01_About.html)|2022-01-25|
+
